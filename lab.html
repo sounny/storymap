@@ -83,6 +83,24 @@
               </ul>
             </div>
           </div>
+
+          <!-- Recommended Resource -->
+          <div class="resource-highlight" style="margin-top: 2rem; background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+            <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+              <div style="flex: 1; min-width: 300px;">
+                <h3 style="margin-bottom: 0.5rem; color: var(--accent-teal);">📚 Recommended Reading</h3>
+                <p style="margin-bottom: 1rem;">Before diving into the builder, we highly recommend reviewing this official guide from the StoryMaps team. It provides excellent context on how to structure your narrative.</p>
+                <a href="https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4" target="_blank" class="cta-button" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                  <span>Open Guide</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+              <div style="flex: 1; min-width: 300px;">
+                <img src="assets/getting-started-guide.png" alt="Getting Started with ArcGIS StoryMaps Guide" style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color);">
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -169,29 +187,55 @@
               <span class="task-time">2 minutes</span>
             </div>
             <div class="task-body">
-              <ol class="numbered-steps">
-                <li>
-                  <strong>Go to StoryMaps:</strong>
-                  <a href="https://storymaps.arcgis.com/" target="_blank" class="link-button">
-                    storymaps.arcgis.com →
-                  </a>
-                </li>
-                <li><strong>Sign in</strong> with your ESRI account</li>
-                <li><strong>Click "New story"</strong> button (big blue button)</li>
-                <li><strong>Select "Start from scratch"</strong></li>
-              </ol>
+              <p>There are two ways to start a new story. Choose the one that works best for where you currently are in the platform.</p>
 
-              <div class="screenshot-placeholder">
-                <div class="placeholder-content">
-                  <span class="placeholder-icon">🖼️</span>
-                  <p>Screenshot: Creating a new story</p>
+              <!-- Method A -->
+              <div class="method-block" style="margin-bottom: 2rem;">
+                <h3>Method A: Direct Builder Access (Fastest)</h3>
+                <ol class="numbered-steps">
+                  <li>
+                    <strong>Go directly to builder:</strong>
+                    <a href="https://storymaps.arcgis.com/stories/new" target="_blank" class="link-button">
+                      To Creator →
+                    </a>
+                  </li>
+                  <li><strong>Sign in</strong> with your ESRI account.</li>
+                  <li><strong>Click "New story"</strong> (big button).</li>
+                  <li><strong>Select "Start from scratch".</strong></li>
+                </ol>
+              </div>
+
+              <!-- Method B -->
+              <div class="method-block" style="border-top: 1px solid var(--border-color); padding-top: 2rem;">
+                <h3>Method B: From ArcGIS Content</h3>
+                <p>If you are already logged into ArcGIS Online (looking at your files):</p>
+                <ol class="numbered-steps">
+                  <li><strong>Click "Content"</strong> in the top menu bar.</li>
+                  <li><strong>Click "Create app"</strong> button.</li>
+                  <li><strong>Select "ArcGIS StoryMaps"</strong> from the list.</li>
+                </ol>
+                <div class="step-visual">
+                  <img src="assets/arcgis-create-app-content.png" alt="Creating StoryMap from ArcGIS Content Tab" class="tutorial-screenshot">
+                </div>
+
+                <div class="info-callout" style="margin-top: 1.5rem; background: rgba(34, 211, 238, 0.1); border-color: var(--accent-cyan);">
+                  <span class="callout-icon">☁️</span>
+                  <div>
+                    <strong>Understanding the Ecosystem:</strong>
+                    <br>
+                    Think of <strong>arcgis.com</strong> as your "digital drive." It's where your StoryMap, any maps you make, and uploaded assets are securely stored. Even if you edit in the StoryMaps builder, everything lives in your ArcGIS Content.
+                  </div>
                 </div>
               </div>
 
-              <div class="success-callout">
+              <div class="step-visual" style="margin-top: 2rem;">
+                <img src="assets/arcgis-builder-blank.png" alt="Blank StoryMap Builder Interface" class="tutorial-screenshot">
+              </div>
+
+              <div class="success-callout" style="margin-top: 2rem;">
                 <span class="callout-icon">✅</span>
                 <div>
-                  <strong>Checkpoint:</strong> You should now see the StoryMap builder with a blank cover block ready for content.
+                  <strong>Checkpoint:</strong> Whichever method you chose, you should now see the StoryMap builder with a blank cover block ready for content.
                 </div>
               </div>
             </div>
@@ -218,6 +262,9 @@
                     <li>Upload one of your photos (choose your best one!)</li>
                     <li>Or select "Browse" to use a stock image</li>
                   </ul>
+                  <div class="step-visual" style="margin-top: 1rem; max-width: 500px;">
+                    <img src="assets/arcgis-cover-upload.png" alt="Upload Cover Image Dialog" class="tutorial-screenshot">
+                  </div>
                 </li>
                 <li>
                   <strong>Add your title:</strong>
@@ -245,6 +292,17 @@
                   <li>Ensure good contrast between image and title</li>
                   <li>Keep titles under 8 words</li>
                 </ul>
+              </div>
+
+              <div class="info-callout" style="background: rgba(168, 85, 247, 0.1); border-color: var(--accent-purple);">
+                <span class="callout-icon">🖼️</span>
+                <div>
+                  <strong>Need a Cover Image?</strong>
+                  <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li><strong><a href="https://unsplash.com/" target="_blank">Unsplash.com</a>:</strong> Excellent source for free, high-quality stock photography.</li>
+                    <li><strong>AI Generation:</strong> Try using tools like <strong>Gemini</strong> or <strong>Nanobanana</strong> to generate a custom image if you have a specific vision!</li>
+                  </ul>
+                </div>
               </div>
 
               <div class="activity-box">
@@ -453,37 +511,30 @@
 
               <ol class="numbered-steps">
                 <li>
-                  <strong>Click the "Design" tab</strong> in the sidebar (paintbrush icon)
+                  <strong>Click "Design"</strong> in the top header bar.
                 </li>
                 <li>
-                  <strong>Browse themes:</strong>
+                  <strong>Explore the Design Panel:</strong>
+                  <div class="step-visual" style="margin-top: 1rem; margin-bottom: 1rem;">
+                    <img src="assets/arcgis-design-tab.png" alt="StoryMap Design Panel" class="tutorial-screenshot">
+                  </div>
                   <ul class="sub-list">
-                    <li>Summit (dark, professional)</li>
-                    <li>Tidal (light, airy)</li>
-                    <li>Mesa (warm, earthy)</li>
-                    <li>Ridgeline (bold header line)</li>
-                    <li>And more...</li>
+                    <li><strong>Cover Layout:</strong> Choose how your title and image overlap (Full, Side-by-Side, or Minimal).</li>
+                    <li><strong>Navigation:</strong> Toggle "Navigation" ON to automatically create a table of contents from your Headings.</li>
+                    <li><strong>Theme:</strong> Select a pre-made value (Summit, Obsidian, Tidal, etc.) to instantly change fonts and colors.</li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Click a theme</strong> to preview it
-                </li>
-                <li>
-                  <strong>Optionally customize:</strong>
-                  <ul class="sub-list">
-                    <li>Adjust accent colors</li>
-                    <li>Change font pairing</li>
-                    <li>Modify cover style</li>
-                  </ul>
+                  <strong>Select a theme</strong> that fits your story's mood!
                 </li>
               </ol>
 
               <div class="pro-tips">
-                <h4>💡 Theme Selection Tips:</h4>
+                <h4>💡 Make It Yours (Don't Stick to Defaults!):</h4>
                 <ul>
-                  <li>Dark themes work well with bright/colorful images</li>
-                  <li>Light themes are better for text-heavy stories</li>
-                  <li>Match theme mood to your content (nature = earth tones)</li>
+                  <li><strong>Avoid the Default:</strong> Changing the theme is the easiest way to make your story stand out. The default theme is functional, but customizing it shows you care about design.</li>
+                  <li><strong>Match the Mood:</strong> Use "Obsidian" for space/night topics, or "Tidal" for water/clean topics.</li>
+                  <li><strong>Test Different Covers:</strong> Try the "Side-by-Side" layout; it often looks more professional than the standard full screen.</li>
                 </ul>
               </div>
             </div>
@@ -618,7 +669,7 @@
       <div class="container footer-content">
         <div class="footer-brand">
           <div class="logo">StoryMap<span class="highlight">Workshop</span></div>
-          <p>&copy; 2026 Geography Department. Built for Student Success.</p>
+          <p>&copy; 2026 Made with ❤️ by Dr. Sounny</p>
         </div>
         <div class="footer-nav">
           <h4>Workshop</h4>

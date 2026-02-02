@@ -21,12 +21,13 @@ Develop a visually compelling, interactive workshop website to teach students ho
 
 ## Roadmap
 
-- [ ] Initialize Project Structure
-- [ ] Create Landing Page (`index.html`)
-- [ ] Implement Styling (`style.css`)
-- [ ] Add Interactive Scripts (`script.js`)
+- [x] Initialize Project Structure
+- [x] Create Landing Page (`index.html`)
+- [x] Implement Styling (`style.css`)
+- [x] Add Interactive Scripts (`script.js`)
 - [ ] Develop Content Modules:
-  - [ ] Introduction to StoryMaps
-  - [ ] Account Setup
-  - [ ] Platform Tour
-  - [ ] Asset Integration
+  - [x] Introduction to StoryMaps (Home)
+  - [x] Account Setup
+  - [x] Platform Tour
+  - [x] Hands-On Lab
+  - [ ] Asset Integration (Challenge/Advanced)
