@@ -41,7 +41,7 @@
           <p class="page-subtitle">Get familiar with the StoryMap interface and learn how to use its building blocks to communicate geographic knowledge and spatial stories.</p>
           
           <div style="background: rgba(168, 85, 247, 0.1); border-left: 4px solid var(--accent-purple); padding: 1rem; border-radius: 6px; margin-top: 1.5rem; font-size: 0.95rem;">
-            <strong>Geographic Perspective:</strong> The StoryMap builder is designed to help you layer geographic information with human narratives. Each tool—from maps to text—serves a purpose in revealing spatial patterns and telling place-based stories.
+            <strong>Geographic Perspective:</strong> The StoryMap builder is designed to help you layer geographic information with human narratives. Each tool - from maps to text - serves a purpose in revealing spatial patterns and telling place-based stories.
           </div>
         </div>
       </section>
@@ -73,7 +73,13 @@
               <h2>The StoryMap Builder Interface</h2>
             </div>
             <div class="step-body">
-              <p>When you create a new story, you'll enter the StoryMap Builder. This is your creative workspace where all the magic happens.</p>
+              <p>When you create a new story (by clicking <strong>"Create"</strong> from your <a href="https://storymaps.arcgis.com/stories" target="_blank">Stories Dashboard</a>), you'll enter the StoryMap Builder.</p>
+              
+              <div class="step-visual" style="margin-bottom: 2rem; max-width: 600px;">
+                <img src="assets/arcgis-create-story.png" alt="Create New Story Button" class="tutorial-screenshot">
+              </div>
+
+              <p>This is your creative workspace where all the magic happens.</p>
 
               <div class="interface-diagram">
                 <div class="diagram-container">
@@ -107,6 +113,14 @@
               <h2>Understanding Content Blocks</h2>
             </div>
             <div class="step-body">
+              <h3>The "Plus" Button</h3>
+              <p>You build your story one piece at a time. To add any content, hover over your story canvas and click the <strong>Green Plus (+) Button</strong> whenever it appears. This opens the Block Palette containing all your tools.</p>
+              
+              <div class="step-visual" style="margin-bottom: 2rem;">
+                 <img src="assets/arcgis-add-block.png" alt="Clicking the Plus Button to Add Blocks" class="tutorial-screenshot">
+              </div>
+
+              <h3>Block Types</h3>
               <p>StoryMaps uses a <strong>block-based system</strong>. Think of each block as a building brick - you stack them to create your complete geographic narrative. Here are the main block types and how geographers use them:</p>
 
               <div class="info-callout" style="margin-bottom: 2rem;">
@@ -120,6 +134,9 @@
                 <span class="callout-icon">⋮⋮</span>
                 <div>
                   <strong>Drag to Reorder:</strong> Every block has a "6-dot handle" on the left side. Click and drag this handle to move blocks up or down in your story!
+                  <div class="step-visual" style="margin-top: 0.5rem; max-width: 400px;">
+                    <img src="assets/arcgis-drag-handle.png" alt="Dragging the six-dot handle to reorder blocks" class="tutorial-screenshot">
+                  </div>
                 </div>
               </div>
 
@@ -191,6 +208,21 @@
                       <span class="tip">Always add alt text</span>
                       <span class="tip">Try filmstrip for galleries</span>
                     </div>
+
+                    <div class="resource-spotlight" style="margin-top: 1.5rem; border-top: 1px dashed var(--border-color); padding-top: 1rem;">
+                        <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem;">📸 Need High-Quality Images?</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Don't use blurry, low-res images! Use <strong><a href="https://unsplash.com/" target="_blank">Unsplash.com</a></strong> to find professional, royalty-free photography.</p>
+                        
+                        <div class="step-visual">
+                          <img src="assets/unsplash-search.png" alt="Unsplash search with 'Free' filter selected" class="tutorial-screenshot">
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;"><strong>Tip:</strong> Always select the <strong>"Free"</strong> filter to ensure you have permission to use the photos.</p>
+                    </div>
+
+                    <p style="margin-top: 1.5rem;"><strong>How to Add It:</strong> Once you've downloaded your image, select <strong>"Image"</strong> from the block palette and use the Upload tab to bring it into your story.</p>
+                    <div class="step-visual">
+                      <img src="assets/arcgis-upload-image.png" alt="Uploading an image to StoryMap" class="tutorial-screenshot">
+                    </div>
                   </div>
                 </div>
 
@@ -201,7 +233,46 @@
                   </div>
                   <div class="block-info">
                     <h3>🗺️ Map Block - Your Geographic Centerpiece</h3>
-                    <p>Add interactive maps using Express Maps (simple annotation) or embed complex Web Maps from ArcGIS Online. Map blocks are where spatial relationships come alive.</p>
+                    <p>When you add a map, you'll see the <strong>Map Browser</strong>. This powerful window connects you to your entire ArcGIS ecosystem.</p>
+                    
+                    <div class="step-visual" style="margin-top: 1rem; margin-bottom: 1rem;">
+                      <img src="assets/arcgis-add-map-browser.png" alt="ArcGIS Map Browser Interface" class="tutorial-screenshot">
+                    </div>
+
+                    <p><strong>Why this is powerful:</strong> Any data, web maps, or layers you already have in ArcGIS Online under <strong>"My Content"</strong> are instantly available here. You don't need to rebuild maps; just select them to bring your existing geographic analysis directly into your story.</p>
+
+                    <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--accent-cyan);">No Map Yet? Use Express Maps!</h4>
+                    <p>If you don't have a pre-made map, simply click <strong>"Create express map"</strong>. This tool lets you build a clear, simple reference map <strong>on the fly</strong> directly within the builder.</p>
+                    
+                    <div class="step-visual" style="margin-top: 1rem; margin-bottom: 1rem;">
+                      <img src="assets/arcgis-express-map.png" alt="Express Map Builder Interface" class="tutorial-screenshot">
+                    </div>
+
+                    <p>Express maps are perfect for:</p>
+                    <ul style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-secondary);">
+                        <li>📍 Sketching study areas</li>
+                        <li>🏹 Drawing routes and arrows</li>
+                        <li>🏷️ Labeling key locations quickly</li>
+                    </ul>
+
+                    <div class="info-callout" style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3);">
+                      <span class="callout-icon">🔍</span>
+                      <div>
+                        <strong>Try This: Search & Add Locations</strong><br>
+                        You don't have to find places manually! Use the <strong>Search Bar</strong> (your built-in geocoding agent) to type any city, address, or landmark - like "Houston, Texas".
+                        <br><br>
+                        Click "Add to map" on the result to instantly drop a marker at that exact location.
+                        <div class="step-visual" style="margin-top: 1rem;">
+                          <img src="assets/arcgis-express-map-search.png" alt="Searching for Houston Texas in Express Map" class="tutorial-screenshot">
+                        </div>
+                      </div>
+                    </div>
+
+                    <p style="margin-top: 1.5rem;"><strong>The Result:</strong> Once you click "Place map", your custom interactive map is instantly embedded into your narrative block.</p>
+                    <div class="step-visual" style="margin-bottom: 2rem;">
+                      <img src="assets/arcgis-map-added.png" alt="Map successfully added to StoryMap" class="tutorial-screenshot">
+                    </div>
+
                     <div class="info-callout" style="margin-top: 1rem; font-size: 0.85rem;">
                       <span class="callout-icon">📐</span>
                       <div>
@@ -493,15 +564,15 @@
                   <div class="workflow-num">1</div>
                   <div class="workflow-content">
                     <h4>Preview</h4>
-                    <p>Click "Preview" to see your story as readers will experience it. Test all links and interactions.</p>
+                    <p>Click "Preview" in the builder header. This provides the most accurate view of what your readers will see.</p>
                   </div>
                 </div>
                 <div class="workflow-arrow">→</div>
                 <div class="workflow-step">
                   <div class="workflow-num">2</div>
                   <div class="workflow-content">
-                    <h4>Check Mobile</h4>
-                    <p>Use the device toggle to preview how your story looks on mobile devices.</p>
+                    <h4>Test Devices</h4>
+                    <p>Use the floating toolbar to switch between <strong>Desktop</strong>, <strong>Tablet</strong>, and <strong>Phone</strong> views. Click <strong>Rotate</strong> to test landscape orientation!</p>
                   </div>
                 </div>
                 <div class="workflow-arrow">→</div>
@@ -509,7 +580,7 @@
                   <div class="workflow-num">3</div>
                   <div class="workflow-content">
                     <h4>Publish</h4>
-                    <p>Set your sharing level (Private, Organization, or Public) and click Publish!</p>
+                    <p>Set sharing (Private, Organization, or Public). Remember: Always preview before you publish!</p>
                   </div>
                 </div>
               </div>
@@ -554,6 +625,45 @@
                     <strong>Duplicate Option:</strong> Before publishing, consider using "Duplicate" to create a backup copy. This is also useful for creating variations of your story for different audiences.
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ecosystem Section -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Ecosystem</div>
+              <h2>Beyond the Story: The ArcGIS StoryMaps Ecosystem</h2>
+            </div>
+            <div class="step-body">
+              <p>While vertically-scrolling "Stories" are the most common output, the ArcGIS StoryMaps platform offers several other powerful ways to package and present geographic information:</p>
+
+              <div class="ecosystem-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                
+                <div class="ecosystem-card" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(34, 211, 238, 0.2); border-radius: 12px; padding: 1.5rem;">
+                  <div style="font-size: 2rem; margin-bottom: 1rem;">📁</div>
+                  <h3>Collections</h3>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary);">Group multiple stories, briefings, and maps into a single, cohesive portfolio. Perfect for final projects or thematic series.</p>
+                </div>
+
+                <div class="ecosystem-card" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: 12px; padding: 1.5rem;">
+                  <div style="font-size: 2rem; margin-bottom: 1rem;">📊</div>
+                  <h3>Briefings</h3>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary);">Slide-based, presentation-style content. Ideal for briefings, executive summaries, and meetings where you need to present geographic findings.</p>
+                </div>
+
+                <div class="ecosystem-card" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(34, 211, 238, 0.2); border-radius: 12px; padding: 1.5rem;">
+                  <div style="font-size: 2rem; margin-bottom: 1rem;">📱</div>
+                  <h3>Frames</h3>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary);">Mobile-first, short-form storytelling using vertical slides. Similar to social media "stories," optimized for quick consumption on phones.</p>
+                </div>
+
+                <div class="ecosystem-card" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: 12px; padding: 1.5rem;">
+                  <div style="font-size: 2rem; margin-bottom: 1rem;">🎨</div>
+                  <h3>Themes</h3>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary);">The "Theme Builder" lets you create custom visual styles—colors, fonts, and logos—to apply across all your StoryMap content.</p>
+                </div>
+
               </div>
             </div>
           </div>

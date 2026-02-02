@@ -82,6 +82,16 @@
                 <li>✓ Capacity to connect place to narrative</li>
               </ul>
             </div>
+            <div class="overview-card">
+              <h3>⚖️ Evaluation Criteria</h3>
+              <p>Your StoryMap will be evaluated on:</p>
+              <ul>
+                <li>✓ <strong>Narrative Arc:</strong> Compelling introduction and conclusion</li>
+                <li>✓ <strong>Map Integration:</strong> Effective use of maps to support text</li>
+                <li>✓ <strong>Media Quality:</strong> High-res images with proper sourcing</li>
+                <li>✓ <strong>Geographic Depth:</strong> Clear spatial analysis or insight</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Recommended Resource -->
@@ -89,7 +99,7 @@
             <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
               <div style="flex: 1; min-width: 300px;">
                 <h3 style="margin-bottom: 0.5rem; color: var(--accent-teal);">📚 Recommended Reading</h3>
-                <p style="margin-bottom: 1rem;">Before diving into the builder, we highly recommend reviewing this official guide from the StoryMaps team. It provides excellent context on how to structure your narrative.</p>
+                <p style="margin-bottom: 1rem; color: #374151;">Before diving into the builder, we highly recommend reviewing this official guide from the StoryMaps team. It provides excellent context on how to structure your narrative.</p>
                 <a href="https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4" target="_blank" class="cta-button" style="display: inline-flex; align-items: center; gap: 0.5rem;">
                   <span>Open Guide</span>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -118,48 +128,141 @@
             <div class="task-body">
               <p><strong>Geographic Question:</strong> Every place has a unique story shaped by its location, history, environment, and people. Choose a meaningful location and consider what geographic insights you can share about it.</p>
               
-              <div class="topic-suggestions">
-                <div class="suggestion">
-                  <span class="suggestion-icon">🏠</span>
-                  <div>
-                    <strong>Your Hometown or Neighborhood</strong>
-                    <p>Explore its geographic location, cultural identity, and community characteristics</p>
+              <div class="topic-suggestions" style="grid-template-columns: 1fr; gap: 1rem;">
+                <!-- Environmental -->
+                <div class="suggestion" style="flex-direction: column; align-items: flex-start;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span class="suggestion-icon">🌍</span>
+                    <strong>Environmental & Physical Geography</strong>
                   </div>
+                  <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">How natural systems and human activities shape landscapes</p>
+                  <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem;">
+                    <li>Local watershed health and water quality mapping</li>
+                    <li>Urban heat islands and temperature inequality</li>
+                    <li>Invasive species spread patterns and ecological impacts</li>
+                    <li>Climate change impacts on a specific region or ecosystem</li>
+                    <li>Natural disaster risk assessment and resilience</li>
+                    <li>Biodiversity hotspots and conservation priorities</li>
+                  </ul>
                 </div>
-                <div class="suggestion">
-                  <span class="suggestion-icon">🎓</span>
-                  <div>
-                    <strong>Your Campus & Surroundings</strong>
-                    <p>Analyze how the campus relates to the city, its geographic setting, and urban context</p>
+
+                <!-- Urban -->
+                <div class="suggestion" style="flex-direction: column; align-items: flex-start;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span class="suggestion-icon">🏙️</span>
+                    <strong>Urban & Economic Geography</strong>
                   </div>
+                  <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">How cities develop and economic activities distribute across space</p>
+                  <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem;">
+                    <li>Neighborhood walkability analysis and urban design</li>
+                    <li>Gentrification patterns and housing affordability</li>
+                    <li>Food deserts and nutritional equity mapping</li>
+                    <li>Public transit accessibility and mobility justice</li>
+                    <li>Economic inequality and neighborhood characteristics</li>
+                    <li>Urban redevelopment and community impact</li>
+                  </ul>
                 </div>
-                <div class="suggestion">
-                  <span class="suggestion-icon">✈️</span>
-                  <div>
-                    <strong>A Geographic Region You've Visited</strong>
-                    <p>Document its climate, landscape features, cultural geography, and what makes it distinctive</p>
+
+                <!-- Historical -->
+                <div class="suggestion" style="flex-direction: column; align-items: flex-start;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span class="suggestion-icon">📜</span>
+                    <strong>Historical & Cultural Geography</strong>
                   </div>
+                  <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">How history, culture, and place intersect to create unique landscapes</p>
+                  <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem;">
+                    <li>Civil rights movement locations and spatial histories</li>
+                    <li>Migration patterns and diaspora communities</li>
+                    <li>Archaeological sites and cultural heritage preservation</li>
+                    <li>Indigenous land histories and territorial sovereignty</li>
+                    <li>Cultural district documentation and community identity</li>
+                    <li>Oral history and place-based memory mapping</li>
+                  </ul>
                 </div>
-                <div class="suggestion">
-                  <span class="suggestion-icon">🌳</span>
-                  <div>
-                    <strong>A Natural or Urban Ecosystem</strong>
-                    <p>Explore its environmental characteristics, biodiversity, human-environment interaction</p>
+
+                <!-- Health -->
+                <div class="suggestion" style="flex-direction: column; align-items: flex-start;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span class="suggestion-icon">🏥</span>
+                    <strong>Health & Social Geography</strong>
                   </div>
+                  <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">How location affects health, wellbeing, and social equity</p>
+                  <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem;">
+                    <li>Healthcare access disparities and provider distribution</li>
+                    <li>Environmental health hazards and vulnerable populations</li>
+                    <li>Disease patterns and epidemiological mapping</li>
+                    <li>Mental health resources and social support networks</li>
+                    <li>Air and water quality impacts on health</li>
+                    <li>Food security and nutritional health geography</li>
+                  </ul>
                 </div>
-                <div class="suggestion">
-                  <span class="suggestion-icon">🏛️</span>
-                  <div>
-                    <strong>A Historically Significant Place</strong>
-                    <p>Reveal how history shaped the landscape and how the place has changed over time</p>
+
+                <!-- Agricultural -->
+                <div class="suggestion" style="flex-direction: column; align-items: flex-start;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span class="suggestion-icon">🌾</span>
+                    <strong>Agricultural & Resource Geography</strong>
                   </div>
+                  <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">How food systems and natural resources are distributed and managed</p>
+                  <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem;">
+                    <li>Farm-to-table supply chains and food networks</li>
+                    <li>Land use changes and agricultural pressures</li>
+                    <li>Local and regional food systems mapping</li>
+                    <li>Water resources and irrigation patterns</li>
+                    <li>Sustainable and traditional farming practices</li>
+                    <li>Conflicts over land and resource access</li>
+                  </ul>
                 </div>
-                <div class="suggestion">
-                  <span class="suggestion-icon">🌐</span>
-                  <div>
-                    <strong>A Place Experiencing Geographic Change</strong>
-                    <p>Document urban growth, climate impacts, economic shifts, or cultural transformation</p>
+
+                <!-- Arts -->
+                <div class="suggestion" style="flex-direction: column; align-items: flex-start;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span class="suggestion-icon">🎨</span>
+                    <strong>Arts, Culture & Creative Geography</strong>
                   </div>
+                  <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">How place inspires creativity and cultural expression</p>
+                  <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem;">
+                    <li>Street art/mural mapping and urban creativity documentation</li>
+                    <li>Music scene geography and venue distribution</li>
+                    <li>Film location exploration and cinematic geography</li>
+                    <li>Architectural styles and building history across neighborhoods</li>
+                    <li>Festival mapping and cultural event geography</li>
+                    <li>Literary geography and author-place connections</li>
+                  </ul>
+                </div>
+
+                 <!-- Global -->
+                <div class="suggestion" style="flex-direction: column; align-items: flex-start;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span class="suggestion-icon">🌐</span>
+                    <strong>Global & Political Geography</strong>
+                  </div>
+                  <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">How power, politics, and international systems shape space</p>
+                  <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem;">
+                    <li>Geopolitical conflict zones and territorial disputes</li>
+                    <li>International development and inequality patterns</li>
+                    <li>Border regions and transnational communities</li>
+                    <li>Climate migration and displacement impacts</li>
+                    <li>International trade networks and supply chains</li>
+                    <li>Global cultural diffusion and glocal adaptation</li>
+                  </ul>
+                </div>
+
+                 <!-- Tourism -->
+                <div class="suggestion" style="flex-direction: column; align-items: flex-start;">
+                  <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span class="suggestion-icon">✈️</span>
+                    <strong>Tourism & Recreation Geography</strong>
+                  </div>
+                  <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">How people visit, experience, and impact leisure destinations</p>
+                  <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem;">
+                    <li>Ecotourism sustainability and environmental impacts</li>
+                    <li>National Park and protected area management</li>
+                    <li>Heritage tourism routes and cultural sites</li>
+                    <li>Economic impact of festivals and major events</li>
+                    <li>Destination branding and place marketing</li>
+                    <li>Accessible tourism and inclusive recreation</li>
+                  </ul>
                 </div>
               </div>
 
@@ -207,15 +310,15 @@
 
               <!-- Method B -->
               <div class="method-block" style="border-top: 1px solid var(--border-color); padding-top: 2rem;">
-                <h3>Method B: From ArcGIS Content</h3>
-                <p>If you are already logged into ArcGIS Online (looking at your files):</p>
+                <h3>Method B: From Your Dashboard</h3>
+                <p>If you are on the StoryMaps home page:</p>
                 <ol class="numbered-steps">
-                  <li><strong>Click "Content"</strong> in the top menu bar.</li>
-                  <li><strong>Click "Create app"</strong> button.</li>
-                  <li><strong>Select "ArcGIS StoryMaps"</strong> from the list.</li>
+                  <li><strong>Click "Create"</strong> in the top header.</li>
+                  <li><strong>Select "Story"</strong> from the dropdown menu.</li>
+                  <li><strong>Choose "Start from scratch"</strong>.</li>
                 </ol>
                 <div class="step-visual">
-                  <img src="assets/arcgis-create-app-content.png" alt="Creating StoryMap from ArcGIS Content Tab" class="tutorial-screenshot">
+                  <img src="assets/arcgis-create-story.png" alt="Creating StoryMap from Dashboard" class="tutorial-screenshot">
                 </div>
 
                 <div class="info-callout" style="margin-top: 1.5rem; background: rgba(34, 211, 238, 0.1); border-color: var(--accent-cyan);">
@@ -305,9 +408,19 @@
                 </div>
               </div>
 
-              <div class="activity-box">
-                <h4>📝 Try It:</h4>
-                <p>Adjust the "focal point" of your cover image by clicking the focal point button. This controls which part of the image stays visible on different screen sizes.</p>
+              <div class="info-callout" style="background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.3);">
+                <span class="callout-icon">⚠️</span>
+                <div>
+                  <strong>Crucial Design Warning: Cover Image Cropping</strong><br>
+                  Cover images are <strong>always cropped</strong> to fit different screen sizes (mobile vs. desktop). It is impossible to show the <i>entire</i> image on every device.<br><br>
+                  <strong>How to fix it:</strong>
+                  <ul style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                    <li><strong>Avoid "Safe Zones":</strong> Don't put text or vital details on the very edges of your photo.</li>
+                    <li><strong>Set the Focal Point:</strong> Click the "gear" or "focal point" icon on your image to tell StoryMaps which part must <i>always</i> remain visible.</li>
+                    <li><strong>Recommended Ratios:</strong> Use landscape images with <strong>3:2</strong> or <strong>16:9</strong> aspect ratios for best results.</li>
+                  </ul>
+                  <a href="https://support.esri.com/en-us/knowledge-base/faq-can-cover-images-be-fully-displayed-in-arcgis-story-000032784" target="_blank" style="font-size: 0.85rem; text-decoration: underline;">Read more about image display rules</a>
+                </div>
               </div>
             </div>
           </div>
@@ -360,7 +473,7 @@
                 <h4>📄 Example Introduction:</h4>
                 <div class="example-content">
                   <p><strong>Welcome to Zilker Park</strong></p>
-                  <p>Nestled in the heart of Austin, Texas, Zilker Park is more than just green space—it's the city's outdoor living room. From the natural spring-fed Barton Springs Pool to panoramic views of the downtown skyline, this 350-acre urban oasis offers something for everyone.</p>
+                  <p>Nestled in the heart of Austin, Texas, Zilker Park is more than just green space - it's the city's outdoor living room. From the natural spring-fed Barton Springs Pool to panoramic views of the downtown skyline, this 350-acre urban oasis offers something for everyone.</p>
                   <p>In this story, I'll take you on a journey through my favorite spots in this beloved park.</p>
                 </div>
               </div>
@@ -386,7 +499,7 @@
                 </li>
                 <li>
                   <strong>Choose "Express map"</strong>
-                  <p class="step-note">(This is the built-in map maker—perfect for quick maps)</p>
+                  <p class="step-note">(This is the built-in map maker - perfect for quick maps)</p>
                 </li>
                 <li>
                   <strong>Search for your location:</strong>
@@ -421,7 +534,7 @@
               <div class="info-callout">
                 <span class="callout-icon">💡</span>
                 <div>
-                  <strong>Express Maps vs Web Maps:</strong> Express Maps are created directly in StoryMaps—great for simple locator maps. For complex multi-layer maps with analysis, create a Web Map in ArcGIS Online first, then embed it.
+                  <strong>Express Maps vs Web Maps:</strong> Express Maps are created directly in StoryMaps - great for simple locator maps. For complex multi-layer maps with analysis, create a Web Map in ArcGIS Online first, then embed it.
                 </div>
               </div>
 
@@ -548,39 +661,55 @@
               <span class="task-time">5 minutes</span>
             </div>
             <div class="task-body">
-              <p>Time to see your story as readers will experience it!</p>
+              <p>Time to see your story as readers will experience it! Don't skip this step.</p>
 
               <ol class="numbered-steps">
                 <li>
-                  <strong>Click "Preview"</strong> in the top-right corner
+                  <strong>Click "Preview"</strong> in the top-right corner.
                 </li>
                 <li>
-                  <strong>Test your story:</strong>
-                  <ul class="sub-list">
-                    <li>Scroll through the entire story</li>
-                    <li>Click map markers and test interactivity</li>
-                    <li>Check text for typos</li>
+                  <strong>Use Multi-Device Preview:</strong>
+                  <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Use the floating toolbar to check responsiveness:</p>
+                  <ul class="sub-list" style="margin-bottom: 1rem;">
+                    <li><strong>Desktop:</strong> Check the wide-screen layout.</li>
+                    <li><strong>Tablet:</strong> Ensure sidecars and images display well.</li>
+                    <li><strong>Phone:</strong> <span style="color: var(--accent-red); font-weight: bold;">Critical Check!</span> Ensure your cover image isn't cropped awkwardly and text is readable.</li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Test mobile view:</strong>
+                  <strong>Polish Your Story Card:</strong>
+                  <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Before publishing, go to <strong>Story settings</strong> > <strong>Story card</strong>.</p>
                   <ul class="sub-list">
-                    <li>Click the phone icon in the preview toolbar</li>
-                    <li>Make sure everything looks good on small screens</li>
+                    <li><strong>Thumbnail:</strong> Upload a clean image (this is what people see on social media).</li>
+                    <li><strong>Summary:</strong> Write a 1-sentence hook.</li>
+                    <li><strong>Tags:</strong> Add "Geographic Storytelling" and your topic.</li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Exit preview</strong> and make any needed fixes
-                </li>
-                <li>
-                  <strong>Click "Publish"</strong> when you're satisfied:
+                  <strong>Click "Publish"</strong> when ready:
                   <ul class="sub-list">
-                    <li>Choose "Everyone (public)" to share with the world</li>
-                    <li>Or "Only me" if you want to keep it private for now</li>
-                    <li>Click "Publish" to go live!</li>
+                    <li>Set sharing to <strong>"Everyone (Public)"</strong> so we can review it.</li>
+                    <li>Click "Publish" to go live.</li>
                   </ul>
                 </li>
               </ol>
+
+              <div class="info-callout" style="background: rgba(16, 185, 129, 0.1); border-color: var(--accent-green);">
+                <span class="callout-icon">📤</span>
+                <div>
+                  <strong>How to Submit:</strong>
+                  <br>
+                  Once published, copy the URL from your browser address bar (it should act look like <code>storymaps.arcgis.com/stories/...</code>).
+                  <br>
+                  <strong>Paste this link into the Canvas assignment submission box to complete the lab!</strong>
+                </div>
+              </div>
+
+              <div class="pro-tips">
+                <h4>💡 Updates & Edits:</h4>
+                <p>Found a typo after publishing? No problem! You can edit your story anytime. The live link won't change until you click <strong>"Publish"</strong> again. Watch for the "Unpublished Changes" badge in the builder.</p>
+              </div>
+            </div>
 
               <div class="success-callout">
                 <span class="callout-icon">🎉</span>
