@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Setup | StoryMap Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">StoryMap<span class="highlight">Workshop</span></a></div>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="account-setup.html" class="active">Account Setup</a></li>
+          <li><a href="platform-tour.html">Platform Tour</a></li>
+          <li><a href="lab.html">Lab</a></li>
+          <li><a href="challenge.html">Challenge</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>Account Setup</span>
+          </div>
+          <span class="module-badge">Module 01</span>
+          <h1>Creating Your <span class="gradient-text">ESRI Account</span></h1>
+          <p class="page-subtitle">Get set up with a free ArcGIS Public Account to access StoryMaps and the ArcGIS ecosystem.</p>
+        </div>
+      </section>
+
+      <!-- Learning Objectives -->
+      <section class="objectives-section">
+        <div class="container">
+          <div class="objectives-card">
+            <h2>🎯 Learning Objectives</h2>
+            <ul class="objectives-list">
+              <li>Understand the difference between Public and Organizational accounts</li>
+              <li>Create a free ESRI Public Account</li>
+              <li>Navigate to the StoryMaps platform</li>
+              <li>Explore your account dashboard</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content -->
+      <section class="tutorial-content">
+        <div class="container">
+          
+          <!-- Step 1 -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Step 1</div>
+              <h2>Understanding ESRI Account Types</h2>
+            </div>
+            <div class="step-body">
+              <p>Before creating an account, it's important to understand the two main types of ArcGIS accounts:</p>
+              
+              <div class="comparison-grid">
+                <div class="comparison-card">
+                  <h3>🆓 Public Account</h3>
+                  <p class="card-desc">Free for anyone to create</p>
+                  <ul class="feature-checklist">
+                    <li class="included">✓ Create unlimited StoryMaps</li>
+                    <li class="included">✓ Access to Express Maps</li>
+                    <li class="included">✓ Living Atlas basemaps</li>
+                    <li class="included">✓ Share publicly</li>
+                    <li class="limited">○ 2GB storage limit</li>
+                    <li class="limited">○ No advanced GIS tools</li>
+                  </ul>
+                  <span class="recommended-badge">Recommended for this workshop</span>
+                </div>
+                <div class="comparison-card">
+                  <h3>🏢 Organizational Account</h3>
+                  <p class="card-desc">Provided by your institution</p>
+                  <ul class="feature-checklist">
+                    <li class="included">✓ Everything in Public</li>
+                    <li class="included">✓ Advanced Web Maps</li>
+                    <li class="included">✓ Collaboration features</li>
+                    <li class="included">✓ More storage</li>
+                    <li class="included">✓ Private sharing options</li>
+                    <li class="included">✓ Premium content</li>
+                  </ul>
+                  <div class="info-callout" style="margin-top: 1rem; background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.3);">
+                    <span class="callout-icon">ℹ️</span>
+                    <div style="font-size: 0.85rem;">
+                      <strong>Important:</strong> You'll need your <strong>organization's URL prefix</strong> to sign in (e.g., yourschool.maps.arcgis.com)
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-callout">
+                <span class="callout-icon">💡</span>
+                <div>
+                  <strong>Pro Tip:</strong> If your university or organization provides ArcGIS accounts, you may already have access! Check with your IT department or GIS coordinator.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Step 2</div>
+              <h2>Navigate to the Sign-Up Page</h2>
+            </div>
+            <div class="step-body">
+              <p>There are two ways to access StoryMaps:</p>
+              
+              <div class="comparison-grid">
+                <div class="comparison-card">
+                  <h3>🧇 From ArcGIS Online</h3>
+                  <p class="card-desc">If you already have an account</p>
+                  <p style="color: var(--text-secondary); font-size: 0.9rem;">Click the "waffle" menu (9-dot grid) in the top bar of your ArcGIS Online account, then select StoryMaps.</p>
+                </div>
+                <div class="comparison-card">
+                  <h3>🔗 Direct URL</h3>
+                  <p class="card-desc">Fastest way to get started</p>
+                  <p style="color: var(--text-secondary); font-size: 0.9rem;">Go directly to <a href="https://storymaps.arcgis.com" target="_blank" class="text-link">storymaps.arcgis.com</a> and sign in or create an account from there.</p>
+                </div>
+              </div>
+
+              <p style="margin-top: 1.5rem;">Let's create your free Public Account:</p>
+              
+              <ol class="numbered-steps">
+                <li>
+                  <strong>Open your browser</strong> and go to:
+                  <a href="https://www.arcgis.com/home/signin.html" target="_blank" class="link-button">
+                    arcgis.com/home/signin.html →
+                  </a>
+                </li>
+                <li>
+                  <strong>Look for the "Create account" option</strong> at the bottom of the sign-in form.
+                </li>
+              </ol>
+
+              <div class="screenshot-placeholder">
+                <div class="placeholder-content">
+                  <span class="placeholder-icon">🖼️</span>
+                  <p>Screenshot: ArcGIS Sign-In Page</p>
+                  <span class="placeholder-note">Shows the main sign-in form with "Create account" link highlighted</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Step 3</div>
+              <h2>Create a Public Account</h2>
+            </div>
+            <div class="step-body">
+              <p>Follow these steps to complete your registration:</p>
+              
+              <ol class="numbered-steps">
+                <li>
+                  <strong>Click "Create a public account"</strong> (not the organizational option)
+                </li>
+                <li>
+                  <strong>Choose your sign-up method:</strong>
+                  <ul class="sub-list">
+                    <li>Sign up with Google</li>
+                    <li>Sign up with Apple</li>
+                    <li>Sign up with Facebook</li>
+                    <li>Or use your email address</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Fill in your details:</strong>
+                  <ul class="sub-list">
+                    <li>First and last name</li>
+                    <li>Email address</li>
+                    <li>Username (choose something professional!)</li>
+                    <li>Password (8+ characters, mix of letters and numbers)</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Accept the Terms of Use</strong> and click "Create Account"
+                </li>
+              </ol>
+
+              <div class="screenshot-placeholder">
+                <div class="placeholder-content">
+                  <span class="placeholder-icon">🖼️</span>
+                  <p>Screenshot: Account Creation Form</p>
+                  <span class="placeholder-note">Shows the registration form with fields highlighted</span>
+                </div>
+              </div>
+
+              <div class="warning-callout">
+                <span class="callout-icon">⚠️</span>
+                <div>
+                  <strong>Important:</strong> Use a valid email address! You'll need to verify it to complete your registration.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Step 4</div>
+              <h2>Verify Your Email</h2>
+            </div>
+            <div class="step-body">
+              <p>Check your email inbox for a verification message from ESRI:</p>
+              
+              <ol class="numbered-steps">
+                <li><strong>Open the verification email</strong> (check spam/junk if needed)</li>
+                <li><strong>Click the verification link</strong> in the email</li>
+                <li><strong>You're done!</strong> Your account is now active</li>
+              </ol>
+
+              <div class="screenshot-placeholder">
+                <div class="placeholder-content">
+                  <span class="placeholder-icon">📧</span>
+                  <p>Screenshot: Verification Email</p>
+                  <span class="placeholder-note">Shows the ESRI verification email with the activation link</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Step 5</div>
+              <h2>Access StoryMaps</h2>
+            </div>
+            <div class="step-body">
+              <p>Now that your account is set up, let's access the StoryMaps platform:</p>
+              
+              <ol class="numbered-steps">
+                <li>
+                  <strong>Go directly to StoryMaps:</strong>
+                  <a href="https://storymaps.arcgis.com/" target="_blank" class="link-button">
+                    storymaps.arcgis.com →
+                  </a>
+                </li>
+                <li><strong>Click "Sign In"</strong> in the top right corner</li>
+                <li><strong>Enter your credentials</strong> that you just created</li>
+                <li><strong>Welcome to your StoryMaps dashboard!</strong></li>
+              </ol>
+
+              <div class="screenshot-placeholder">
+                <div class="placeholder-content">
+                  <span class="placeholder-icon">🖼️</span>
+                  <p>Screenshot: StoryMaps Dashboard</p>
+                  <span class="placeholder-note">Shows the main StoryMaps interface after logging in</span>
+                </div>
+              </div>
+
+              <div class="success-callout">
+                <span class="callout-icon">🎉</span>
+                <div>
+                  <strong>Congratulations!</strong> You now have access to create unlimited StoryMaps. Your dashboard is your home base for creating, managing, and sharing your stories.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Explore Resources -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Bonus</div>
+              <h2>Explore the Resources Section</h2>
+            </div>
+            <div class="step-body">
+              <p>Before diving into building, take a moment to explore the helpful resources on the StoryMaps homepage (bottom left area):</p>
+
+              <div class="dashboard-features">
+                <div class="dashboard-feature">
+                  <span class="feature-icon">🔍</span>
+                  <div>
+                    <h4>Explore Stories</h4>
+                    <p>Browse other people's stories for inspiration about what's possible</p>
+                  </div>
+                </div>
+                <div class="dashboard-feature">
+                  <span class="feature-icon">📖</span>
+                  <div>
+                    <h4>Tutorials</h4>
+                    <p>Step-by-step guides from ESRI on specific features</p>
+                  </div>
+                </div>
+                <div class="dashboard-feature">
+                  <span class="feature-icon">📝</span>
+                  <div>
+                    <h4>Planning Stories</h4>
+                    <p>Learn strategies for outlining and structuring your narrative</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-callout">
+                <span class="callout-icon">💡</span>
+                <div>
+                  <strong>Pro Tip:</strong> Spend time exploring other people's stories! It's the best way to get inspiration and see what's possible with StoryMaps.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dashboard Overview -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Bonus</div>
+              <h2>Your Dashboard Overview</h2>
+            </div>
+            <div class="step-body">
+              <p>Here's what you'll find on your StoryMaps dashboard:</p>
+
+              <div class="dashboard-features">
+                <div class="dashboard-feature">
+                  <span class="feature-icon">➕</span>
+                  <div>
+                    <h4>New Story Button</h4>
+                    <p>Start creating a new StoryMap from scratch</p>
+                  </div>
+                </div>
+                <div class="dashboard-feature">
+                  <span class="feature-icon">📁</span>
+                  <div>
+                    <h4>My Stories</h4>
+                    <p>View and manage all your created StoryMaps</p>
+                  </div>
+                </div>
+                <div class="dashboard-feature">
+                  <span class="feature-icon">⭐</span>
+                  <div>
+                    <h4>Favorites</h4>
+                    <p>Quick access to stories you've bookmarked</p>
+                  </div>
+                </div>
+                <div class="dashboard-feature">
+                  <span class="feature-icon">📚</span>
+                  <div>
+                    <h4>Collections</h4>
+                    <p>Organize your stories into themed groups</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="next-steps">
+        <div class="container">
+          <div class="completion-card">
+            <div class="completion-icon">✅</div>
+            <h2>Module Complete!</h2>
+            <p>You've successfully created your ESRI account and accessed the StoryMaps platform. You're ready to explore the interface!</p>
+            <div class="next-buttons">
+              <a href="platform-tour.html" class="cta-button">Continue to Platform Tour →</a>
+              <a href="index.html" class="secondary-button">Back to Overview</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <div class="logo">StoryMap<span class="highlight">Workshop</span></div>
+          <p>&copy; 2026 Geography Department. Built for Student Success.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Workshop</h4>
+          <a href="account-setup.html">Account Setup</a>
+          <a href="platform-tour.html">Platform Tour</a>
+          <a href="lab.html">Lab</a>
+          <a href="challenge.html">Challenge</a>
+        </div>
+        <div class="footer-nav">
+          <h4>Resources</h4>
+          <a href="https://storymaps.arcgis.com/" target="_blank">StoryMaps Home</a>
+          <a href="https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/resources" target="_blank">ESRI Resources</a>
+          <a href="https://www.arcgis.com/home/signin.html" target="_blank">ArcGIS Sign In</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platform Tour | StoryMap Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">StoryMap<span class="highlight">Workshop</span></a></div>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="account-setup.html">Account Setup</a></li>
+          <li><a href="platform-tour.html" class="active">Platform Tour</a></li>
+          <li><a href="lab.html">Lab</a></li>
+          <li><a href="challenge.html">Challenge</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>Platform Tour</span>
+          </div>
+          <span class="module-badge">Module 02</span>
+          <h1>Exploring the <span class="gradient-text">StoryMap Builder</span></h1>
+          <p class="page-subtitle">Get familiar with the StoryMap interface and learn about the building blocks that make your stories come alive.</p>
+        </div>
+      </section>
+
+      <!-- Learning Objectives -->
+      <section class="objectives-section">
+        <div class="container">
+          <div class="objectives-card">
+            <h2>🎯 Learning Objectives</h2>
+            <ul class="objectives-list">
+              <li>Navigate the StoryMap builder interface</li>
+              <li>Understand the block-based content system</li>
+              <li>Learn about different content block types</li>
+              <li>Discover immersive storytelling features</li>
+              <li>Understand publishing and sharing options</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interface Overview -->
+      <section class="tutorial-content">
+        <div class="container">
+
+          <!-- Opening the Builder -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Overview</div>
+              <h2>The StoryMap Builder Interface</h2>
+            </div>
+            <div class="step-body">
+              <p>When you create a new story, you'll enter the StoryMap Builder. This is your creative workspace where all the magic happens.</p>
+
+              <div class="interface-diagram">
+                <div class="diagram-container">
+                  <div class="diagram-mock">
+                    <div class="mock-topbar">
+                      <div class="mock-logo">📖 StoryMaps</div>
+                      <div class="mock-actions">
+                        <span class="mock-btn">Preview</span>
+                        <span class="mock-btn primary">Publish</span>
+                      </div>
+                    </div>
+                    <div class="mock-main">
+                      <div class="mock-sidebar">
+                        <div class="mock-sidebar-item active">📝</div>
+                        <div class="mock-sidebar-item">🎨</div>
+                        <div class="mock-sidebar-item">⚙️</div>
+                      </div>
+                      <div class="mock-canvas">
+                        <div class="mock-block cover">Cover Block</div>
+                        <div class="mock-block">Text Block</div>
+                        <div class="mock-block media">Media Block</div>
+                        <div class="mock-add-btn">+ Add content</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="diagram-labels">
+                    <div class="label-item">
+                      <span class="label-num">1</span>
+                      <span>Top Bar - Preview, publish, and settings</span>
+                    </div>
+                    <div class="label-item">
+                      <span class="label-num">2</span>
+                      <span>Sidebar - Content, design, and story settings</span>
+                    </div>
+                    <div class="label-item">
+                      <span class="label-num">3</span>
+                      <span>Canvas - Your story content blocks</span>
+                    </div>
+                    <div class="label-item">
+                      <span class="label-num">4</span>
+                      <span>Add Button - Insert new content blocks</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Blocks Section -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Core Concept</div>
+              <h2>Understanding Content Blocks</h2>
+            </div>
+            <div class="step-body">
+              <p>StoryMaps uses a <strong>block-based system</strong>. Think of each block as a building brick - you stack them to create your complete story. Here are the main block types:</p>
+
+              <div class="info-callout" style="margin-bottom: 2rem;">
+                <span class="callout-icon">⋮⋮</span>
+                <div>
+                  <strong>Drag to Reorder:</strong> Every block has a "6-dot handle" on the left side. Click and drag this handle to move blocks up or down in your story!
+                </div>
+              </div>
+
+              <div class="blocks-showcase">
+                
+                <!-- Cover Block -->
+                <div class="block-card">
+                  <div class="block-preview cover-preview">
+                    <span class="preview-label">COVER</span>
+                  </div>
+                  <div class="block-info">
+                    <h3>🎬 Cover Block</h3>
+                    <p>The first thing readers see. Make it impactful with a full-screen image, video, or map. Add your title and subtitle here.</p>
+                    <div class="block-tips">
+                      <span class="tip">Use high-res images (1920px+)</span>
+                      <span class="tip">Keep titles concise</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Text Block -->
+                <div class="block-card">
+                  <div class="block-preview text-preview">
+                    <div class="preview-line long"></div>
+                    <div class="preview-line"></div>
+                    <div class="preview-line medium"></div>
+                  </div>
+                  <div class="block-info">
+                    <h3>📝 Text Block</h3>
+                    <p>Add narrative content with rich formatting. Includes headings, paragraphs, quotes, bullet lists, and numbered lists.</p>
+                    <div class="info-callout" style="margin-top: 1rem; font-size: 0.85rem;">
+                      <span class="callout-icon">📋</span>
+                      <div>
+                        <strong>Text Hierarchy Tip:</strong><br>
+                        • <strong>Heading 1 (H1)</strong> = Creates a new Chapter (appears in Navigation)<br>
+                        • <strong>Heading 2 (H2)</strong> = Section within a chapter<br>
+                        • <strong>Paragraph</strong> = Regular body text
+                      </div>
+                    </div>
+                    <div class="block-tips">
+                      <span class="tip">Use H1 for chapters</span>
+                      <span class="tip">Keep paragraphs short</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Media Block -->
+                <div class="block-card">
+                  <div class="block-preview media-preview">
+                    <span class="preview-icon">🖼️</span>
+                  </div>
+                  <div class="block-info">
+                    <h3>🖼️ Media Block</h3>
+                    <p>Embed images, videos, and audio. Supports uploads, URLs, and embedded content from YouTube, Vimeo, SoundCloud, and more.</p>
+                    <div class="info-callout" style="margin-top: 1rem; font-size: 0.85rem;">
+                      <span class="callout-icon">📽️</span>
+                      <div>
+                        <strong>Media Types:</strong><br>
+                        • <strong>Video:</strong> Upload directly OR embed via URL (YouTube, Vimeo)<br>
+                        • <strong>Audio:</strong> Add narration, music, or ambient sounds<br>
+                        • <strong>Image Gallery:</strong> Upload multiple images and choose layouts like <em>filmstrip</em> (scrollable row of thumbnails)
+                      </div>
+                    </div>
+                    <div class="block-tips">
+                      <span class="tip">Always add alt text</span>
+                      <span class="tip">Try filmstrip for galleries</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Map Block -->
+                <div class="block-card">
+                  <div class="block-preview map-preview">
+                    <span class="preview-icon">🗺️</span>
+                  </div>
+                  <div class="block-info">
+                    <h3>🗺️ Map Block</h3>
+                    <p>Add interactive maps using Express Maps (built-in) or embed Web Maps from ArcGIS Online. Add locations, routes, and areas.</p>
+                    <div class="info-callout" style="margin-top: 1rem; font-size: 0.85rem;">
+                      <span class="callout-icon">📐</span>
+                      <div>
+                        <strong>Map Sizing Options:</strong><br>
+                        • <strong>Small:</strong> Thumbnail size, inline with text<br>
+                        • <strong>Medium:</strong> Half-width, good for side-by-side layouts<br>
+                        • <strong>Large:</strong> Full-width, maximum impact<br>
+                        You can also drag maps between paragraphs using the 6-dot handle!
+                      </div>
+                    </div>
+                    <div class="block-tips">
+                      <span class="tip">Express Maps for quick locators</span>
+                      <span class="tip">Web Maps for complex data</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Button Block -->
+                <div class="block-card">
+                  <div class="block-preview button-preview">
+                    <span class="preview-btn">Click Here</span>
+                  </div>
+                  <div class="block-info">
+                    <h3>🔗 Button Block</h3>
+                    <p>Add call-to-action buttons that link to external resources, other stories, or specific sections within your story.</p>
+                    <div class="block-tips">
+                      <span class="tip">Use action-oriented text</span>
+                      <span class="tip">Limit to 2-3 per story</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Separator Block -->
+                <div class="block-card">
+                  <div class="block-preview separator-preview">
+                    <div class="preview-separator"></div>
+                  </div>
+                  <div class="block-info">
+                    <h3>➖ Separator Block</h3>
+                    <p>Visual dividers to break up content sections. Choose from different styles: line, dots, or spacing.</p>
+                    <div class="block-tips">
+                      <span class="tip">Use between major sections</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Immersive Blocks -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Advanced</div>
+              <h2>Immersive Storytelling Blocks</h2>
+            </div>
+            <div class="step-body">
+              <p>These powerful blocks create scroll-driven, interactive experiences that engage readers at a deeper level:</p>
+
+              <div class="immersive-grid">
+                
+                <div class="immersive-card">
+                  <div class="immersive-visual sidecar-visual">
+                    <div class="sidecar-panel"></div>
+                    <div class="sidecar-media"></div>
+                  </div>
+                  <div class="immersive-content">
+                    <h3>📐 Sidecar</h3>
+                    <p>Create a split-screen experience with scrolling narrative panels alongside a media window (map, image, or video) that updates as readers scroll.</p>
+                    <ul class="use-cases">
+                      <li><strong>Best for:</strong> Guided map tours</li>
+                      <li><strong>Best for:</strong> Before/after comparisons</li>
+                      <li><strong>Best for:</strong> Step-by-step processes</li>
+                    </ul>
+                    <div class="info-callout" style="margin-top: 1rem; font-size: 0.85rem;">
+                      <span class="callout-icon">✨</span>
+                      <div>
+                        <strong>Pro Features:</strong><br>
+                        • Use <strong>"Docked" version</strong> for a panel that stays fixed while readers scroll through slides<br>
+                        • Add <strong>Map Actions</strong> to automatically zoom/pan to specific locations as users navigate slides!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="immersive-card">
+                  <div class="immersive-visual slideshow-visual">
+                    <div class="slide-dot active"></div>
+                    <div class="slide-dot"></div>
+                    <div class="slide-dot"></div>
+                  </div>
+                  <div class="immersive-content">
+                    <h3>🎠 Slideshow</h3>
+                    <p>Full-screen slides that readers navigate through. Each slide can have different backgrounds with overlaid text and media.</p>
+                    <ul class="use-cases">
+                      <li><strong>Best for:</strong> Photo essays</li>
+                      <li><strong>Best for:</strong> Key statistics</li>
+                      <li><strong>Best for:</strong> Location highlights</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="immersive-card">
+                  <div class="immersive-visual tour-visual">
+                    <div class="tour-point p1"></div>
+                    <div class="tour-point p2"></div>
+                    <div class="tour-point p3"></div>
+                  </div>
+                  <div class="immersive-content">
+                    <h3>🧭 Map Tour</h3>
+                    <p>Showcase a series of locations on a map. Readers explore numbered points, each with its own photo, title, and description.</p>
+                    <ul class="use-cases">
+                      <li><strong>Best for:</strong> Travel itineraries</li>
+                      <li><strong>Best for:</strong> Field research sites</li>
+                      <li><strong>Best for:</strong> Historic locations</li>
+                    </ul>
+                    <div class="info-callout" style="margin-top: 1rem; font-size: 0.85rem;">
+                      <span class="callout-icon">📍</span>
+                      <div>
+                        <strong>Two Ways to Create:</strong><br>
+                        • <strong>From Feature Service:</strong> Import existing point data from ArcGIS Online<br>
+                        • <strong>Start from Scratch:</strong> Manually add tour points one by one (click map to place each point)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="info-callout">
+                <span class="callout-icon">💡</span>
+                <div>
+                  <strong>Pro Tip:</strong> Don't overuse immersive blocks! One or two well-placed immersive sections have more impact than using them everywhere.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Express Maps -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Built-In</div>
+              <h2>Express Maps: Quick Map Creation</h2>
+            </div>
+            <div class="step-body">
+              <p>Express Maps is StoryMaps' built-in mapping tool for creating simple, focused maps without leaving the builder. Perfect for locator maps and visual annotations!</p>
+
+              <div class="design-features">
+                <div class="design-feature">
+                  <span class="design-icon">📍</span>
+                  <div>
+                    <h4>Points</h4>
+                    <p>Add location markers. Choose numbered points (1, 2, 3...) for sequential stops or regular pins for general locations.</p>
+                  </div>
+                </div>
+                <div class="design-feature">
+                  <span class="design-icon">➖</span>
+                  <div>
+                    <h4>Lines</h4>
+                    <p>Draw routes, paths, or boundaries. Use straight lines or freehand drawing for irregular shapes.</p>
+                  </div>
+                </div>
+                <div class="design-feature">
+                  <span class="design-icon">⬛</span>
+                  <div>
+                    <h4>Areas</h4>
+                    <p>Highlight regions with filled polygons. Great for showing neighborhoods, zones, or territories.</p>
+                  </div>
+                </div>
+                <div class="design-feature">
+                  <span class="design-icon">➡️</span>
+                  <div>
+                    <h4>Arrows</h4>
+                    <p>Show direction, movement, or flow. Perfect for indicating routes or highlighting specific areas.</p>
+                  </div>
+                </div>
+                <div class="design-feature">
+                  <span class="design-icon">🏷️</span>
+                  <div>
+                    <h4>Text Labels</h4>
+                    <p>Add annotations directly on the map to label features, areas, or provide context.</p>
+                  </div>
+                </div>
+                <div class="design-feature">
+                  <span class="design-icon">🎨</span>
+                  <div>
+                    <h4>Styling</h4>
+                    <p>Customize colors, line width, opacity, and fill patterns for all drawing elements to match your story's theme.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-callout">
+                <span class="callout-icon">💡</span>
+                <div>
+                  <strong>When to use Express Maps vs. ArcGIS Web Maps:</strong> Use Express Maps for simple locator maps and quick annotations. Use Web Maps from ArcGIS Online when you need to display complex data layers, analysis results, or existing GIS data.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Actions -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Advanced</div>
+              <h2>Map Actions: Interactive Navigation</h2>
+            </div>
+            <div class="step-body">
+              <p>Map Actions let you create dynamic, interactive map experiences within Sidecars. As readers scroll through your narrative, the map automatically zooms and pans to specific locations!</p>
+
+              <div class="comparison-grid">
+                <div class="comparison-card">
+                  <h3>🎯 How It Works</h3>
+                  <ol style="color: var(--text-secondary); font-size: 0.9rem; padding-left: 1.2rem;">
+                    <li>Create a Sidecar with a map as the media</li>
+                    <li>Add slides to your Sidecar</li>
+                    <li>For each slide, click "Add map action"</li>
+                    <li>Set the zoom level and location for that slide</li>
+                    <li>When readers reach that slide, the map automatically navigates!</li>
+                  </ol>
+                </div>
+                <div class="comparison-card">
+                  <h3>✨ Use Cases</h3>
+                  <ul style="color: var(--text-secondary); font-size: 0.9rem; padding-left: 1.2rem;">
+                    <li>Zoom from country overview to city detail</li>
+                    <li>Highlight different neighborhoods as story progresses</li>
+                    <li>Focus on specific features in your data</li>
+                    <li>Create a visual "flythrough" of locations</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design Panel -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Design</div>
+              <h2>Customizing Your Story's Look</h2>
+            </div>
+            <div class="step-body">
+              <p>Access the Design panel to customize your story's visual appearance:</p>
+
+              <div class="design-features">
+                <div class="design-feature">
+                  <span class="design-icon">🎨</span>
+                  <div>
+                    <h4>Theme</h4>
+                    <p>Choose from pre-built themes or create custom color combinations for your story's overall look.</p>
+                  </div>
+                </div>
+                <div class="design-feature">
+                  <span class="design-icon">🔤</span>
+                  <div>
+                    <h4>Typography</h4>
+                    <p>Select font pairings for headings and body text. Several professional combinations are available.</p>
+                  </div>
+                </div>
+                <div class="design-feature">
+                  <span class="design-icon">🏷️</span>
+                  <div>
+                    <h4>Cover Layout</h4>
+                    <p>Customize how your cover displays: full-screen, side-by-side, or minimal styles.</p>
+                  </div>
+                </div>
+                <div class="design-feature">
+                  <span class="design-icon">📊</span>
+                  <div>
+                    <h4>Navigation</h4>
+                    <p>Add a table of contents for longer stories to help readers navigate sections.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preview and Publish -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Final Step</div>
+              <h2>Preview & Publish</h2>
+            </div>
+            <div class="step-body">
+              <p>Before sharing your story with the world, always preview and test:</p>
+
+              <div class="publish-workflow">
+                <div class="workflow-step">
+                  <div class="workflow-num">1</div>
+                  <div class="workflow-content">
+                    <h4>Preview</h4>
+                    <p>Click "Preview" to see your story as readers will experience it. Test all links and interactions.</p>
+                  </div>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                  <div class="workflow-num">2</div>
+                  <div class="workflow-content">
+                    <h4>Check Mobile</h4>
+                    <p>Use the device toggle to preview how your story looks on mobile devices.</p>
+                  </div>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                  <div class="workflow-num">3</div>
+                  <div class="workflow-content">
+                    <h4>Publish</h4>
+                    <p>Set your sharing level (Private, Organization, or Public) and click Publish!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sharing-options">
+                <h4>Sharing Options Explained:</h4>
+                <div class="option-grid">
+                  <div class="option-item">
+                    <span class="option-icon">🔒</span>
+                    <div>
+                      <strong>Private</strong>
+                      <p>Only you can view the story</p>
+                    </div>
+                  </div>
+                  <div class="option-item">
+                    <span class="option-icon">🏢</span>
+                    <div>
+                      <strong>Organization</strong>
+                      <p>Anyone in your org can view</p>
+                    </div>
+                  </div>
+                  <div class="option-item">
+                    <span class="option-icon">🌐</span>
+                    <div>
+                      <strong>Public</strong>
+                      <p>Anyone with the link can view</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="info-callout" style="margin-top: 1.5rem; background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.3);">
+                  <span class="callout-icon">⚠️</span>
+                  <div>
+                    <strong>Critical: Sharing Privilege Match!</strong><br>
+                    Your embedded maps and media must have the <em>same or greater</em> sharing level as your story. If your story is Public but your embedded map is Private, viewers won't be able to see the map!
+                  </div>
+                </div>
+
+                <div class="info-callout" style="margin-top: 1rem;">
+                  <span class="callout-icon">🔄</span>
+                  <div>
+                    <strong>Duplicate Option:</strong> Before publishing, consider using "Duplicate" to create a backup copy. This is also useful for creating variations of your story for different audiences.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Reference -->
+          <div class="tutorial-step">
+            <div class="step-header">
+              <div class="step-badge">Reference</div>
+              <h2>Keyboard Shortcuts</h2>
+            </div>
+            <div class="step-body">
+              <div class="shortcuts-grid">
+                <div class="shortcut">
+                  <kbd>Ctrl</kbd> + <kbd>S</kbd>
+                  <span>Save story</span>
+                </div>
+                <div class="shortcut">
+                  <kbd>Ctrl</kbd> + <kbd>Z</kbd>
+                  <span>Undo</span>
+                </div>
+                <div class="shortcut">
+                  <kbd>Ctrl</kbd> + <kbd>Y</kbd>
+                  <span>Redo</span>
+                </div>
+                <div class="shortcut">
+                  <kbd>/</kbd>
+                  <span>Add new block</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="next-steps">
+        <div class="container">
+          <div class="completion-card">
+            <div class="completion-icon">✅</div>
+            <h2>Module Complete!</h2>
+            <p>You now understand the StoryMap builder interface and content blocks. Time to put this knowledge into practice!</p>
+            <div class="next-buttons">
+              <a href="lab.html" class="cta-button">Continue to Hands-On Lab →</a>
+              <a href="account-setup.html" class="secondary-button">← Back to Account Setup</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <div class="logo">StoryMap<span class="highlight">Workshop</span></div>
+          <p>&copy; 2026 Geography Department. Built for Student Success.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Workshop</h4>
+          <a href="account-setup.html">Account Setup</a>
+          <a href="platform-tour.html">Platform Tour</a>
+          <a href="lab.html">Lab</a>
+          <a href="challenge.html">Challenge</a>
+        </div>
+        <div class="footer-nav">
+          <h4>Resources</h4>
+          <a href="https://storymaps.arcgis.com/" target="_blank">StoryMaps Home</a>
+          <a href="https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/resources" target="_blank">ESRI Resources</a>
+          <a href="https://www.arcgis.com/home/signin.html" target="_blank">ArcGIS Sign In</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

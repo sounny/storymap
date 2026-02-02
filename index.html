@@ -1,9 +1,448 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta http-equiv="refresh" content="1; url='https://storymaps.arcgis.com/stories/1e0bf9624ad54b59b710642b144a5507'" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastering ESRI StoryMaps | Digital Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>Please follow <a href="https://storymaps.arcgis.com/stories/1e0bf9624ad54b59b710642b144a5507">this link</a>.</p>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">StoryMap<span class="highlight">Workshop</span></a></div>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="account-setup.html">Account Setup</a></li>
+          <li><a href="platform-tour.html">Platform Tour</a></li>
+          <li><a href="lab.html">Lab</a></li>
+          <li><a href="challenge.html">Challenge</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <p class="hero-badge animate-in">Interactive Workshop</p>
+                <h1 class="animate-in delay-1">Place-Based Storytelling <span class="gradient-text">Made Easy</span></h1>
+                <p class="animate-in delay-2">ArcGIS StoryMaps allows you to transform complex data into immersive narratives that resonate. Whether informing the public, updating stakeholders, or inspiring action, your story starts here.</p>
+                <div class="hero-buttons animate-in delay-3">
+                    <a href="account-setup.html" class="cta-button">Start Workshop</a>
+                    <a href="https://storymaps.arcgis.com/stories/new" target="_blank" class="secondary-button">Launch Builder</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="card-stack">
+                    <div class="card c1">
+                        <div class="card-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        </div>
+                        <div class="card-body">
+                            <div class="line l1"></div>
+                            <div class="line l2"></div>
+                            <div class="img-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshop Modules -->
+        <section id="modules" class="modules-section">
+            <div class="container">
+                <h2 class="section-title">Workshop <span class="highlight">Modules</span></h2>
+                <p class="intro-text">Complete each module in order to master StoryMaps from setup to publishing your own project.</p>
+                
+                <div class="modules-grid">
+                    <a href="account-setup.html" class="module-card">
+                        <div class="module-number">01</div>
+                        <div class="module-icon">🔑</div>
+                        <h3>Account Setup</h3>
+                        <p>Create your free ESRI Public Account and explore the dashboard resources.</p>
+                        <span class="module-link">Start Module →</span>
+                    </a>
+                    <a href="platform-tour.html" class="module-card">
+                        <div class="module-number">02</div>
+                        <div class="module-icon">🖥️</div>
+                        <h3>Platform Tour</h3>
+                        <p>Master blocks, Express Maps, Sidecars, Map Tours, and Map Actions.</p>
+                        <span class="module-link">Start Module →</span>
+                    </a>
+                    <a href="lab.html" class="module-card">
+                        <div class="module-number">03</div>
+                        <div class="module-icon">🧪</div>
+                        <h3>Hands-On Lab</h3>
+                        <p>Build your first StoryMap with themes, chapters, maps, and media.</p>
+                        <span class="module-link">Start Module →</span>
+                    </a>
+                    <a href="challenge.html" class="module-card featured">
+                        <div class="module-number">04</div>
+                        <div class="module-icon">🏆</div>
+                        <h3>Final Challenge</h3>
+                        <p>Create a portfolio-ready StoryMap with immersive elements for your project.</p>
+                        <span class="module-link">Start Challenge →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro" class="feature-section">
+            <div class="container">
+                <div class="intro-text-block">
+                    <h2 class="section-title">The Art of the <span class="highlight">Possible</span></h2>
+                    <p class="lead">In this workshop, we take you on a guided tour of StoryMaps' capabilities and high-level workflows.</p>
+                    <p>Explore examples that showcase what is possible, learn the essential building blocks of a story, and get professional tips to streamline your creation process. From simple maps to complex, data-driven journalism, StoryMaps is your canvas.</p>
+                </div>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="icon-wrapper">📖</div>
+                        <h3>Narrative-Driven</h3>
+                        <p>Combine interactive maps with text, images, video, and audio. Create chapters, sidecars, and map tours to guide readers through your story.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper">⚡</div>
+                        <h3>No Code Needed</h3>
+                        <p>Build stunning spatial apps with an intuitive drag-and-drop builder. Use Express Maps to add points, lines, arrows, and annotations directly.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper">📱</div>
+                        <h3>Responsive Design</h3>
+                        <p>Your stories automatically adapt to any screen size. Preview on mobile before publishing to ensure a great experience everywhere.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-wrapper">🌐</div>
+                        <h3>ArcGIS Powered</h3>
+                        <p>Tap into the ArcGIS ecosystem. Embed web maps, import feature services for Map Tours, and leverage powerful spatial data and analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <section id="setup" class="step-section dark-bg">
+        <div class="container">
+          <h2 class="section-title">Getting Started</h2>
+          <div class="steps-container">
+            <div class="step-item active" data-step="1">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h3>Create an ESRI Public Account</h3>
+                <p>
+                  To use StoryMaps for free, you need an ArcGIS Public Account.
+                </p>
+                <ol>
+                  <li>
+                    <strong>Sign Up:</strong> Go to
+                    <a
+                      href="https://www.arcgis.com/home/signin.html"
+                      target="_blank"
+                      class="text-link"
+                      >ArcGIS Sign In</a
+                    >.
+                  </li>
+                  <li>
+                    <strong>Select:</strong> Choose "Create a Public Account".
+                  </li>
+                  <li>
+                    <strong>Details:</strong> Fill in your name and email.
+                    Verify your account via the email link.
+                  </li>
+                  <li>
+                    <strong>Log In:</strong> Once verified, you're ready to
+                    access the platform.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="step-item" data-step="2">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h3>Access the Platform</h3>
+                <p>
+                  Go to
+                  <a
+                    href="https://storymaps.arcgis.com/"
+                    target="_blank"
+                    class="text-link"
+                    >storymaps.arcgis.com</a
+                  >
+                  and sign in with your new account.
+                </p>
+                <p>
+                  Here you will see your dashboard where you can start new
+                  stories, view favorites, and manage your collections.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="platform" class="ui-tour-section">
+        <div class="container">
+          <h2 class="section-title">Platform Tour</h2>
+          <div class="tour-layout">
+            <div class="tour-text">
+              <h3>The StoryBuilder Interface</h3>
+              <p>
+                The builder is divided into blocks. You stack blocks to build
+                your story.
+              </p>
+              <ul class="feature-list">
+                <li>
+                  <strong>Cover:</strong> The first thing readers see. Make it
+                  impactful with a full-screen image or video.
+                </li>
+                <li>
+                  <strong>Text:</strong> Add titles, paragraphs, and quotes.
+                </li>
+                <li>
+                  <strong>Media:</strong> Upload images, videos, and audio
+                  directly.
+                </li>
+                <li>
+                  <strong>Immersive:</strong> Use "Sidecar" or "Guided Tour" for
+                  scrolling map interactions.
+                </li>
+              </ul>
+            </div>
+            <div class="tour-visual">
+              <div class="mock-browser">
+                <div class="browser-header">
+                  <span class="dot red"></span><span class="dot yellow"></span
+                  ><span class="dot green"></span>
+                </div>
+                <div class="browser-content placeholder-ui">
+                  <div class="ui-sidebar"></div>
+                  <div class="ui-main">
+                    <div class="ui-block-hero"></div>
+                    <div class="ui-block-text"></div>
+                    <div class="ui-block-map"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="assets" class="integration-section">
+        <div class="container">
+          <h2 class="section-title">Bringing in ArcGIS Assets</h2>
+          <p class="intro-text">
+            Unleash the full power of GIS by connecting your StoryMap to ArcGIS
+            Online.
+          </p>
+
+          <div class="integration-grid">
+            <div class="integration-card">
+              <div class="card-icon">🗺️</div>
+              <h3>Web Maps</h3>
+              <p>
+                Create complex maps in ArcGIS Online (Map Viewer) with multiple
+                layers, pop-ups, and analysis. Save them, and they instantly
+                appear in your StoryMap builder under "My Maps".
+              </p>
+            </div>
+            <div class="integration-card">
+              <div class="card-icon">📊</div>
+              <h3>Dashboards</h3>
+              <p>
+                Embed ArcGIS Dashboards directly into your story to show live
+                data, charts, and gauges alongside your narrative.
+              </p>
+            </div>
+            <div class="integration-card">
+              <div class="card-icon">🌐</div>
+              <h3>Living Atlas</h3>
+              <p>
+                Access thousands of curated datasets from the Living Atlas of
+                the World directly within the simplified map builder.
+              </p>
+            </div>
+            <div class="integration-card">
+              <div class="card-icon">📍</div>
+              <h3>Feature Services</h3>
+              <p>
+                Import point data from ArcGIS Online to power Map Tours automatically. 
+                Your existing GIS data becomes an interactive guided experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="cta-box">
+            <h3>Ready to build?</h3>
+            <p>Start your first story today and share it with the world.</p>
+            <a
+              href="https://storymaps.arcgis.com/stories/new"
+              target="_blank"
+              class="primary-btn"
+              >Launch StoryMaps</a
+            >
+          </div>
+        </div>
+      </section>
+        <section id="curriculum" class="process-section">
+            <div class="container">
+                <h2 class="section-title">The <span class="highlight">Storytelling Process</span></h2>
+                <p class="intro-text">Great stories aren't just written; they are designed. Follow this four-phase framework to craft compelling narratives.</p>
+                
+                <div class="process-timeline">
+                    <!-- Phase 1: Plan -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">01</div>
+                        <div class="timeline-content">
+                            <h3>Plan & Outline</h3>
+                            <p class="timeline-subtitle">Before you build, map it out.</p>
+                            <ul class="checklist">
+                                <li><strong>Target Audience:</strong> Who are they? What do they already know?</li>
+                                <li><strong>Core Message:</strong> Define your "Rule of Three" (3 takeaways max).</li>
+                                <li><strong>Content Inventory:</strong> Gather your maps, images, and videos.</li>
+                                <li><strong>Storyboard:</strong> Draft your narrative arc on paper first.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2: Build -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">02</div>
+                        <div class="timeline-content">
+                            <h3>Build & Visualize</h3>
+                            <p class="timeline-subtitle">Assemble your story blocks.</p>
+                            <ul class="checklist">
+                                <li><strong>Immersive Blocks:</strong> Use 'Sidecar' for scrolling map narratives.</li>
+                                <li><strong>Express Maps:</strong> Create simple locator maps directly in the builder.</li>
+                                <li><strong>Media:</strong> Ensure images are high-res (1920px+) but optimized.</li>
+                                <li><strong>Map Action:</strong> Link text to map movements for dynamic storytelling.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 3: Refine -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">03</div>
+                        <div class="timeline-content">
+                            <h3>Refine & Polish</h3>
+                            <p class="timeline-subtitle">Details make the design.</p>
+                            <ul class="checklist">
+                                <li><strong>Visual Hierarchy:</strong> Use headers (H1, H2) to guide the reader.</li>
+                                <li><strong>Theme:</strong> Choose a color palette that matches your mood.</li>
+                                <li><strong>Accessibility:</strong> Add Alt-text to all images and maps.</li>
+                                <li><strong>Review:</strong> Check your story on mobile devices.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Phase 4: Publish -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">04</div>
+                        <div class="timeline-content">
+                            <h3>Publish & Share</h3>
+                            <p class="timeline-subtitle">Release it to the world.</p>
+                            <ul class="checklist">
+                                <li><strong>Metadata:</strong> Edit title, summary, and thumbnail for social sharing.</li>
+                                <li><strong>Visibility:</strong> Set permissions (Private, Organization, or Public).</li>
+                                <li><strong>Embed:</strong> Integrate your story into other portfolio sites.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section">
+            <div class="container">
+                <h2 class="section-title">Learning <span class="highlight">Resources</span></h2>
+                <div class="resource-grid">
+                    <a href="https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4" target="_blank" class="resource-card">
+                        <div class="resource-icon">🚀</div>
+                        <div class="resource-info">
+                            <h3>Getting Started</h3>
+                            <p>The official step-by-step guide to the StoryMaps builder interface.</p>
+                            <span class="read-link">Read Guide &rarr;</span>
+                        </div>
+                    </a>
+                    <a href="https://storymaps.arcgis.com/stories/472a6ddd582b40b58a5a6af2c30a4573" target="_blank" class="resource-card">
+                        <div class="resource-icon">📝</div>
+                        <div class="resource-info">
+                            <h3>Planning Your Story</h3>
+                            <p>Learn how to outline, define your audience, and prepare your assets.</p>
+                            <span class="read-link">Read Guide &rarr;</span>
+                        </div>
+                    </a>
+                    <a href="https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/resources" target="_blank" class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <div class="resource-info">
+                            <h3>ESRI Resource Hub</h3>
+                            <p>Access hundreds of tutorials, webinars, and inspirational examples.</p>
+                            <span class="read-link">Explore Hub &rarr;</span>
+                        </div>
+                    </a>
+                    <a href="https://storymaps.arcgis.com/" target="_blank" class="resource-card">
+                        <div class="resource-icon">🌟</div>
+                        <div class="resource-info">
+                            <h3>Explore Stories</h3>
+                            <p>Browse inspiring StoryMaps from around the world to see what's possible.</p>
+                            <span class="read-link">Get Inspired &rarr;</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <section id="instructor" class="instructor-section">
+            <div class="container">
+                <h2 class="section-title">Meet Your <span class="highlight">Instructor</span></h2>
+                <div class="instructor-card">
+                    <div class="instructor-visual">
+                        <img src="assets/instructor.png" alt="Dr. Moulay Anwar Sounny-Slitine" class="instructor-img">
+                    </div>
+                    <div class="instructor-info">
+                        <h3>Dr. Sounny</h3>
+                        <p class="role">Geospatial Scientist & Educator</p>
+                        <p>Dr. Sounny is a leading expert in Geospatial Science and Technology, dedicated to making complex GIS concepts accessible to all.</p>
+                        <p>Dr. Sounny empowers students to tell compelling, data-driven stories that bridge the gap between physical geography and social impact.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon">🌐 Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <div class="logo">StoryMap<span class="highlight">Workshop</span></div>
+          <p>&copy; 2026 Made with ❤️ by Dr. Sounny</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Workshop</h4>
+          <a href="account-setup.html">Account Setup</a>
+          <a href="platform-tour.html">Platform Tour</a>
+          <a href="lab.html">Lab</a>
+          <a href="challenge.html">Challenge</a>
+        </div>
+        <div class="footer-nav">
+          <h4>Resources</h4>
+          <a href="https://storymaps.arcgis.com/" target="_blank">StoryMaps Home</a>
+          <a href="https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/resources" target="_blank">ESRI Resources</a>
+          <a href="https://www.arcgis.com/home/signin.html" target="_blank">ArcGIS Sign In</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

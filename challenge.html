@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Challenge | StoryMap Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">StoryMap<span class="highlight">Workshop</span></a></div>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="account-setup.html">Account Setup</a></li>
+          <li><a href="platform-tour.html">Platform Tour</a></li>
+          <li><a href="lab.html">Lab</a></li>
+          <li><a href="challenge.html" class="active">Challenge</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="page-hero challenge-hero">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>Final Challenge</span>
+          </div>
+          <span class="module-badge challenge-badge">Final Challenge</span>
+          <h1>Apply StoryMaps to <span class="gradient-text">Your Project</span></h1>
+          <p class="page-subtitle">Put your skills to the test by creating a StoryMap that supports your academic or professional work.</p>
+          <div class="lab-meta">
+            <span class="meta-item">⏱️ 1-2 hours</span>
+            <span class="meta-item">📊 Intermediate Level</span>
+            <span class="meta-item">🏆 Portfolio-Ready</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Challenge Brief -->
+      <section class="challenge-brief">
+        <div class="container">
+          <div class="brief-card">
+            <div class="brief-header">
+              <span class="brief-icon">📋</span>
+              <h2>The Challenge</h2>
+            </div>
+            <div class="brief-content">
+              <p class="brief-lead">Create a professional-quality StoryMap that tells a spatial story related to your field of study, research interest, or a real-world issue you care about.</p>
+              <p>This is your opportunity to build something meaningful—a piece you can add to your portfolio, share with professors, or use in presentations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Ideas -->
+      <section class="project-ideas">
+        <div class="container">
+          <h2 class="section-title">Project <span class="highlight">Ideas</span></h2>
+          <p class="intro-text">Not sure what to create? Here are some project ideas organized by field:</p>
+
+          <div class="ideas-grid">
+            
+            <div class="idea-card">
+              <div class="idea-icon">🌍</div>
+              <h3>Environmental Science</h3>
+              <ul class="idea-list">
+                <li>Document local watershed health</li>
+                <li>Map urban heat islands in your city</li>
+                <li>Track invasive species spread</li>
+                <li>Visualize climate change impacts</li>
+                <li>Create a nature reserve tour</li>
+              </ul>
+            </div>
+
+            <div class="idea-card">
+              <div class="idea-icon">🏙️</div>
+              <h3>Urban Planning</h3>
+              <ul class="idea-list">
+                <li>Analyze neighborhood walkability</li>
+                <li>Document gentrification patterns</li>
+                <li>Map food deserts</li>
+                <li>Explore transit accessibility</li>
+                <li>Historical development timeline</li>
+              </ul>
+            </div>
+
+            <div class="idea-card">
+              <div class="idea-icon">📜</div>
+              <h3>History & Humanities</h3>
+              <ul class="idea-list">
+                <li>Civil rights movement locations</li>
+                <li>Historical migration patterns</li>
+                <li>Archaeological site exploration</li>
+                <li>Literary geography tour</li>
+                <li>Cultural heritage documentation</li>
+              </ul>
+            </div>
+
+            <div class="idea-card">
+              <div class="idea-icon">🏥</div>
+              <h3>Public Health</h3>
+              <ul class="idea-list">
+                <li>Healthcare access disparities</li>
+                <li>Disease outbreak visualization</li>
+                <li>Environmental health hazards</li>
+                <li>Mental health resources map</li>
+                <li>Vaccination site accessibility</li>
+              </ul>
+            </div>
+
+            <div class="idea-card">
+              <div class="idea-icon">🌾</div>
+              <h3>Agriculture & Food</h3>
+              <ul class="idea-list">
+                <li>Farm-to-table supply chains</li>
+                <li>Agricultural land use changes</li>
+                <li>Local food systems mapping</li>
+                <li>Soil quality variations</li>
+                <li>Sustainable farming practices</li>
+              </ul>
+            </div>
+
+            <div class="idea-card">
+              <div class="idea-icon">🎨</div>
+              <h3>Arts & Culture</h3>
+              <ul class="idea-list">
+                <li>Street art/mural walking tour</li>
+                <li>Music scene documentation</li>
+                <li>Film location exploration</li>
+                <li>Architecture styles tour</li>
+                <li>Cultural festival guide</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Requirements -->
+      <section class="requirements-section">
+        <div class="container">
+          <h2 class="section-title">Challenge <span class="highlight">Requirements</span></h2>
+          
+          <div class="requirements-grid">
+            
+            <div class="requirement-card must-have">
+              <div class="requirement-header">
+                <span class="requirement-icon">✅</span>
+                <h3>Must Include</h3>
+              </div>
+              <ul class="requirement-list">
+                <li>
+                  <strong>Professional Cover</strong>
+                  <p>High-quality image, compelling title, and descriptive subtitle</p>
+                </li>
+                <li>
+                  <strong>Clear Introduction</strong>
+                  <p>Sets context, explains "why this matters," and previews content</p>
+                </li>
+                <li>
+                  <strong>At Least One Map</strong>
+                  <p>Express Map or embedded Web Map with multiple features</p>
+                </li>
+                <li>
+                  <strong>Multiple Content Blocks</strong>
+                  <p>Minimum 6 content blocks with variety (text, images, maps)</p>
+                </li>
+                <li>
+                  <strong>One Immersive Section</strong>
+                  <p>Sidecar (with Map Actions for guided navigation), Slideshow, or Map Tour</p>
+                </li>
+                <li>
+                  <strong>Conclusion with Call-to-Action</strong>
+                  <p>Summarize key points and guide readers to next steps</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="requirement-card should-have">
+              <div class="requirement-header">
+                <span class="requirement-icon">⭐</span>
+                <h3>Should Include</h3>
+              </div>
+              <ul class="requirement-list">
+                <li>
+                  <strong>Custom Theme</strong>
+                  <p>Thoughtfully chosen colors that match your topic</p>
+                </li>
+                <li>
+                  <strong>Accessibility Features</strong>
+                  <p>Alt text on all images, good color contrast</p>
+                </li>
+                <li>
+                  <strong>Mobile Optimization</strong>
+                  <p>Tested and looks good on phone screens</p>
+                </li>
+                <li>
+                  <strong>External Links</strong>
+                  <p>References to sources or related resources</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="requirement-card nice-have">
+              <div class="requirement-header">
+                <span class="requirement-icon">🌟</span>
+                <h3>Bonus Points</h3>
+              </div>
+              <ul class="requirement-list">
+                <li>
+                  <strong>Embedded Web Map</strong>
+                  <p>Create a custom map in ArcGIS Online with multiple layers</p>
+                </li>
+                <li>
+                  <strong>Map Tour from Feature Service</strong>
+                  <p>Import existing point data from ArcGIS Online for your tour</p>
+                </li>
+                <li>
+                  <strong>Map Actions in Sidecar</strong>
+                  <p>Auto-zoom to different locations as readers scroll through slides</p>
+                </li>
+                <li>
+                  <strong>Video Content</strong>
+                  <p>Include relevant video (self-recorded or embedded from YouTube)</p>
+                </li>
+                <li>
+                  <strong>Audio Narration</strong>
+                  <p>Add audio to enhance the storytelling experience</p>
+                </li>
+                <li>
+                  <strong>Image Gallery</strong>
+                  <p>Use the filmstrip layout to showcase multiple related images</p>
+                </li>
+                <li>
+                  <strong>Express Map Annotations</strong>
+                  <p>Use arrows, text labels, and numbered points for detailed maps</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Planning Template -->
+      <section class="planning-section">
+        <div class="container">
+          <h2 class="section-title">Plan Your <span class="highlight">Story</span></h2>
+          <p class="intro-text">Use this template to plan your StoryMap before you start building:</p>
+
+          <div class="planning-template">
+            <div class="planning-group">
+              <h3>1. Define Your Story</h3>
+              <div class="planning-fields">
+                <div class="field">
+                  <label>Topic/Title:</label>
+                  <div class="field-hint">What is your StoryMap about?</div>
+                </div>
+                <div class="field">
+                  <label>Target Audience:</label>
+                  <div class="field-hint">Who will read this? What do they already know?</div>
+                </div>
+                <div class="field">
+                  <label>Main Message (1-2 sentences):</label>
+                  <div class="field-hint">What's the ONE thing readers should remember?</div>
+                </div>
+                <div class="field">
+                  <label>Three Key Points:</label>
+                  <div class="field-hint">The main supporting ideas</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="planning-group">
+              <h3>2. Gather Your Assets</h3>
+              <div class="planning-fields">
+                <div class="field">
+                  <label>Images Needed:</label>
+                  <div class="field-hint">List photos you need to collect or create</div>
+                </div>
+                <div class="field">
+                  <label>Map Locations:</label>
+                  <div class="field-hint">What places will you feature on maps?</div>
+                </div>
+                <div class="field">
+                  <label>Data Sources:</label>
+                  <div class="field-hint">Where is your information coming from?</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="planning-group">
+              <h3>3. Outline Your Structure</h3>
+              <div class="storyboard">
+                <div class="storyboard-item">
+                  <span class="sb-num">1</span>
+                  <span class="sb-label">Cover</span>
+                </div>
+                <div class="storyboard-item">
+                  <span class="sb-num">2</span>
+                  <span class="sb-label">Introduction</span>
+                </div>
+                <div class="storyboard-item empty">
+                  <span class="sb-num">3</span>
+                  <span class="sb-label">Your section...</span>
+                </div>
+                <div class="storyboard-item empty">
+                  <span class="sb-num">4</span>
+                  <span class="sb-label">Your section...</span>
+                </div>
+                <div class="storyboard-item empty">
+                  <span class="sb-num">5</span>
+                  <span class="sb-label">Your section...</span>
+                </div>
+                <div class="storyboard-item">
+                  <span class="sb-num">...</span>
+                  <span class="sb-label">Conclusion</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-callout">
+            <span class="callout-icon">💡</span>
+            <div>
+              <strong>Pro Tip:</strong> Spend 20% of your time planning and 80% building. A clear outline makes the building process much smoother!
+            </div>
+          </div>
+
+          <div class="info-callout" style="background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.3);">
+            <span class="callout-icon">⚠️</span>
+            <div>
+              <strong>Important: Match Sharing Levels!</strong><br>
+              If you embed maps or other content from ArcGIS Online, make sure their sharing level matches your StoryMap. If your story is <strong>Public</strong>, all embedded content must also be <strong>Public</strong>—otherwise viewers won't see it!
+            </div>
+          </div>
+
+          <div class="info-callout">
+            <span class="callout-icon">🔄</span>
+            <div>
+              <strong>Backup Your Work:</strong> Use the "Duplicate" feature to create a backup copy before making major changes. This also helps if you want to create different versions for various audiences.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Evaluation Criteria -->
+      <section class="evaluation-section">
+        <div class="container">
+          <h2 class="section-title">Evaluation <span class="highlight">Criteria</span></h2>
+          <p class="intro-text">Your StoryMap will be evaluated on these dimensions:</p>
+
+          <div class="rubric">
+            <div class="rubric-item">
+              <div class="rubric-header">
+                <h3>Content Quality</h3>
+                <span class="rubric-weight">30%</span>
+              </div>
+              <p>Is the information accurate, well-researched, and clearly communicated? Does it tell a compelling story?</p>
+            </div>
+
+            <div class="rubric-item">
+              <div class="rubric-header">
+                <h3>Map Integration</h3>
+                <span class="rubric-weight">25%</span>
+              </div>
+              <p>Are maps used effectively to support the narrative? Do they add value beyond what text alone could convey?</p>
+            </div>
+
+            <div class="rubric-item">
+              <div class="rubric-header">
+                <h3>Visual Design</h3>
+                <span class="rubric-weight">20%</span>
+              </div>
+              <p>Is the design cohesive and professional? Are images high-quality and properly sized?</p>
+            </div>
+
+            <div class="rubric-item">
+              <div class="rubric-header">
+                <h3>User Experience</h3>
+                <span class="rubric-weight">15%</span>
+              </div>
+              <p>Is the story easy to follow? Does it work well on different devices? Is navigation intuitive?</p>
+            </div>
+
+            <div class="rubric-item">
+              <div class="rubric-header">
+                <h3>Technical Execution</h3>
+                <span class="rubric-weight">10%</span>
+              </div>
+              <p>Are all features working correctly? No broken links, images, or map errors?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Inspiration Gallery -->
+      <section class="inspiration-section">
+        <div class="container">
+          <h2 class="section-title">Need <span class="highlight">Inspiration?</span></h2>
+          <p class="intro-text">Explore these award-winning StoryMaps for ideas:</p>
+
+          <div class="inspiration-grid">
+            <a href="https://storymaps.arcgis.com/collections/f03d98a5f80746fb870bdaa9db728ef0" target="_blank" class="inspiration-card">
+              <div class="inspiration-preview">
+                <span class="preview-icon">🏆</span>
+              </div>
+              <div class="inspiration-info">
+                <h3>StoryMaps Competition Winners</h3>
+                <p>Annual collection of award-winning student StoryMaps</p>
+                <span class="view-link">Explore Collection →</span>
+              </div>
+            </a>
+
+            <a href="https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/stories" target="_blank" class="inspiration-card">
+              <div class="inspiration-preview">
+                <span class="preview-icon">⭐</span>
+              </div>
+              <div class="inspiration-info">
+                <h3>ESRI Featured Stories</h3>
+                <p>Professionally crafted StoryMaps from ESRI's team</p>
+                <span class="view-link">Browse Stories →</span>
+              </div>
+            </a>
+
+            <a href="https://storymaps.arcgis.com/stories/6b1e89bb28a54b3ba788dc0abe6cad3c" target="_blank" class="inspiration-card">
+              <div class="inspiration-preview">
+                <span class="preview-icon">📚</span>
+              </div>
+              <div class="inspiration-info">
+                <h3>StoryMaps Style Guide</h3>
+                <p>Best practices for design and content</p>
+                <span class="view-link">Read Guide →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Submission -->
+      <section class="submission-section">
+        <div class="container">
+          <div class="submission-card">
+            <h2>📤 Submitting Your Challenge</h2>
+            <div class="submission-steps">
+              <div class="submission-step">
+                <span class="step-num">1</span>
+                <div>
+                  <h4>Publish Your Story</h4>
+                  <p>Set sharing to "Everyone (public)" so it can be viewed</p>
+                </div>
+              </div>
+              <div class="submission-step">
+                <span class="step-num">2</span>
+                <div>
+                  <h4>Copy the URL</h4>
+                  <p>Get your StoryMap's public link from the share options</p>
+                </div>
+              </div>
+              <div class="submission-step">
+                <span class="step-num">3</span>
+                <div>
+                  <h4>Submit</h4>
+                  <p>Share your link through your course's submission system</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="deadline-box">
+              <span class="deadline-icon">📅</span>
+              <div>
+                <strong>Check with your instructor for the submission deadline!</strong>
+                <p>Late submissions may not receive full credit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Completion -->
+      <section class="next-steps challenge-complete">
+        <div class="container">
+          <div class="completion-card final-card">
+            <div class="completion-icon">🎓</div>
+            <h2>Workshop Complete!</h2>
+            <p>Congratulations on completing the StoryMap Workshop! You now have the skills to create compelling, interactive spatial narratives. Keep exploring and telling stories that matter.</p>
+            <div class="final-actions">
+              <a href="https://storymaps.arcgis.com/stories/new" target="_blank" class="cta-button">Start Your Challenge →</a>
+              <a href="index.html" class="secondary-button">Back to Home</a>
+            </div>
+            <div class="workshop-resources">
+              <h4>Continue Learning:</h4>
+              <div class="resource-links">
+                <a href="https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/resources" target="_blank">ESRI Resource Hub</a>
+                <a href="https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4" target="_blank">Getting Started Guide</a>
+                <a href="https://community.esri.com/t5/arcgis-storymaps/ct-p/arcgis-storymaps" target="_blank">Community Forums</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <div class="logo">StoryMap<span class="highlight">Workshop</span></div>
+          <p>&copy; 2026 Geography Department. Built for Student Success.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Workshop</h4>
+          <a href="account-setup.html">Account Setup</a>
+          <a href="platform-tour.html">Platform Tour</a>
+          <a href="lab.html">Lab</a>
+          <a href="challenge.html">Challenge</a>
+        </div>
+        <div class="footer-nav">
+          <h4>Resources</h4>
+          <a href="https://storymaps.arcgis.com/" target="_blank">StoryMaps Home</a>
+          <a href="https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/resources" target="_blank">ESRI Resources</a>
+          <a href="https://www.arcgis.com/home/signin.html" target="_blank">ArcGIS Sign In</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

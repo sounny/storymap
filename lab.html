@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hands-On Lab | StoryMap Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">StoryMap<span class="highlight">Workshop</span></a></div>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="account-setup.html">Account Setup</a></li>
+          <li><a href="platform-tour.html">Platform Tour</a></li>
+          <li><a href="lab.html" class="active">Lab</a></li>
+          <li><a href="challenge.html">Challenge</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="page-hero lab-hero">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>Hands-On Lab</span>
+          </div>
+          <span class="module-badge">Module 03</span>
+          <h1>Build Your First <span class="gradient-text">StoryMap</span></h1>
+          <p class="page-subtitle">Follow along step-by-step to create a simple StoryMap about a place that matters to you.</p>
+          <div class="lab-meta">
+            <span class="meta-item">⏱️ ~30 minutes</span>
+            <span class="meta-item">📊 Beginner Level</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lab Overview -->
+      <section class="lab-overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-card">
+              <h3>🎯 What You'll Build</h3>
+              <p>A simple StoryMap featuring a meaningful location with:</p>
+              <ul>
+                <li>An engaging cover</li>
+                <li>Introduction text</li>
+                <li>An interactive map</li>
+                <li>Images and media</li>
+              </ul>
+            </div>
+            <div class="overview-card">
+              <h3>📋 Before You Start</h3>
+              <p>Make sure you have:</p>
+              <ul>
+                <li>✓ An ESRI account (Module 01)</li>
+                <li>✓ Basic platform knowledge (Module 02)</li>
+                <li>✓ 2-3 photos of your chosen place</li>
+                <li>✓ A short story to tell (2-3 paragraphs)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lab Instructions -->
+      <section class="lab-content">
+        <div class="container">
+
+          <!-- Task 1 -->
+          <div class="lab-task">
+            <div class="task-header">
+              <div class="task-number">Task 1</div>
+              <h2>Choose Your Topic</h2>
+              <span class="task-time">5 minutes</span>
+            </div>
+            <div class="task-body">
+              <p>Before we start building, let's decide what your StoryMap will be about. Choose a place that has meaning to you:</p>
+              
+              <div class="topic-suggestions">
+                <div class="suggestion">
+                  <span class="suggestion-icon">🏠</span>
+                  <div>
+                    <strong>Your Hometown</strong>
+                    <p>Share what makes your hometown special</p>
+                  </div>
+                </div>
+                <div class="suggestion">
+                  <span class="suggestion-icon">🎓</span>
+                  <div>
+                    <strong>Your Campus</strong>
+                    <p>Give a tour of your favorite campus spots</p>
+                  </div>
+                </div>
+                <div class="suggestion">
+                  <span class="suggestion-icon">✈️</span>
+                  <div>
+                    <strong>A Trip You Took</strong>
+                    <p>Document a memorable travel experience</p>
+                  </div>
+                </div>
+                <div class="suggestion">
+                  <span class="suggestion-icon">🌳</span>
+                  <div>
+                    <strong>A Local Park</strong>
+                    <p>Explore a natural area you enjoy</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="activity-box">
+                <h4>📝 Your Turn:</h4>
+                <p>Write down:</p>
+                <ol>
+                  <li>The place you'll feature</li>
+                  <li>Why it's meaningful to you (1-2 sentences)</li>
+                  <li>3 things readers should know about it</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task 2 -->
+          <div class="lab-task">
+            <div class="task-header">
+              <div class="task-number">Task 2</div>
+              <h2>Create a New Story</h2>
+              <span class="task-time">2 minutes</span>
+            </div>
+            <div class="task-body">
+              <ol class="numbered-steps">
+                <li>
+                  <strong>Go to StoryMaps:</strong>
+                  <a href="https://storymaps.arcgis.com/" target="_blank" class="link-button">
+                    storymaps.arcgis.com →
+                  </a>
+                </li>
+                <li><strong>Sign in</strong> with your ESRI account</li>
+                <li><strong>Click "New story"</strong> button (big blue button)</li>
+                <li><strong>Select "Start from scratch"</strong></li>
+              </ol>
+
+              <div class="screenshot-placeholder">
+                <div class="placeholder-content">
+                  <span class="placeholder-icon">🖼️</span>
+                  <p>Screenshot: Creating a new story</p>
+                </div>
+              </div>
+
+              <div class="success-callout">
+                <span class="callout-icon">✅</span>
+                <div>
+                  <strong>Checkpoint:</strong> You should now see the StoryMap builder with a blank cover block ready for content.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task 3 -->
+          <div class="lab-task">
+            <div class="task-header">
+              <div class="task-number">Task 3</div>
+              <h2>Design Your Cover</h2>
+              <span class="task-time">5 minutes</span>
+            </div>
+            <div class="task-body">
+              <p>The cover is the first impression. Let's make it count!</p>
+
+              <ol class="numbered-steps">
+                <li>
+                  <strong>Click on the cover block</strong> to edit it
+                </li>
+                <li>
+                  <strong>Add a background:</strong>
+                  <ul class="sub-list">
+                    <li>Click "Add image or video"</li>
+                    <li>Upload one of your photos (choose your best one!)</li>
+                    <li>Or select "Browse" to use a stock image</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Add your title:</strong>
+                  <ul class="sub-list">
+                    <li>Click "Add title"</li>
+                    <li>Type a compelling title (keep it short!)</li>
+                    <li>Example: "Discovering Austin's Hidden Gems"</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Add a subtitle:</strong>
+                  <ul class="sub-list">
+                    <li>Click "Add subtitle"</li>
+                    <li>Briefly describe your story</li>
+                    <li>Example: "A local's guide to the best spots in Texas' capital"</li>
+                  </ul>
+                </li>
+              </ol>
+
+              <div class="pro-tips">
+                <h4>💡 Pro Tips for Great Covers:</h4>
+                <ul>
+                  <li>Use landscape-oriented images (wider than tall)</li>
+                  <li>Avoid busy images that compete with text</li>
+                  <li>Ensure good contrast between image and title</li>
+                  <li>Keep titles under 8 words</li>
+                </ul>
+              </div>
+
+              <div class="activity-box">
+                <h4>📝 Try It:</h4>
+                <p>Adjust the "focal point" of your cover image by clicking the focal point button. This controls which part of the image stays visible on different screen sizes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task 4 -->
+          <div class="lab-task">
+            <div class="task-header">
+              <div class="task-number">Task 4</div>
+              <h2>Add Your Introduction</h2>
+              <span class="task-time">5 minutes</span>
+            </div>
+            <div class="task-body">
+              <p>After the cover, hook your readers with an engaging introduction.</p>
+
+              <ol class="numbered-steps">
+                <li>
+                  <strong>Click the "+" button</strong> below the cover
+                </li>
+                <li>
+                  <strong>Select "Text"</strong> from the menu
+                </li>
+                <li>
+                  <strong>Add a heading:</strong>
+                  <ul class="sub-list">
+                    <li>Type your section title</li>
+                    <li>Highlight it and select "Heading 1" from the format menu</li>
+                  </ul>
+                </li>
+              </ol>
+
+              <div class="info-callout">
+                <span class="callout-icon">📚</span>
+                <div>
+                  <strong>Chapters & Navigation:</strong> When you use <strong>Heading 1 (H1)</strong>, it creates a new "chapter" in your story. If you enable Navigation in the Design panel, readers can jump directly to each H1 heading from a table of contents!
+                </div>
+              </div>
+
+              <ol class="numbered-steps" start="4">
+                <li>
+                  <strong>Write your introduction:</strong>
+                  <ul class="sub-list">
+                    <li>1-2 paragraphs explaining your place</li>
+                    <li>Why does this place matter?</li>
+                    <li>What will readers discover?</li>
+                  </ul>
+                </li>
+              </ol>
+
+              <div class="example-box">
+                <h4>📄 Example Introduction:</h4>
+                <div class="example-content">
+                  <p><strong>Welcome to Zilker Park</strong></p>
+                  <p>Nestled in the heart of Austin, Texas, Zilker Park is more than just green space—it's the city's outdoor living room. From the natural spring-fed Barton Springs Pool to panoramic views of the downtown skyline, this 350-acre urban oasis offers something for everyone.</p>
+                  <p>In this story, I'll take you on a journey through my favorite spots in this beloved park.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task 5 -->
+          <div class="lab-task">
+            <div class="task-header">
+              <div class="task-number">Task 5</div>
+              <h2>Add an Express Map</h2>
+              <span class="task-time">8 minutes</span>
+            </div>
+            <div class="task-body">
+              <p>Now let's add the geographic heart of your story—an interactive map!</p>
+
+              <ol class="numbered-steps">
+                <li>
+                  <strong>Click the "+" button</strong> to add a new block
+                </li>
+                <li>
+                  <strong>Select "Map"</strong> from the menu
+                </li>
+                <li>
+                  <strong>Choose "Express map"</strong>
+                  <p class="step-note">(This is the built-in map maker—perfect for quick maps)</p>
+                </li>
+                <li>
+                  <strong>Search for your location:</strong>
+                  <ul class="sub-list">
+                    <li>Type your place name in the search bar</li>
+                    <li>Press Enter or click the search result</li>
+                    <li>The map will zoom to that location</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Add a point marker:</strong>
+                  <ul class="sub-list">
+                    <li>Click the "Add" button</li>
+                    <li>Select "Add point"</li>
+                    <li>Click on the map where you want the marker</li>
+                    <li>Add a title and description in the popup</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Customize your marker:</strong>
+                  <ul class="sub-list">
+                    <li>Change the icon (pin, star, etc.)</li>
+                    <li>Adjust the color</li>
+                    <li>Add an image to the popup if desired</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Click "Place map"</strong> when finished
+                </li>
+              </ol>
+
+              <div class="info-callout">
+                <span class="callout-icon">💡</span>
+                <div>
+                  <strong>Express Maps vs Web Maps:</strong> Express Maps are created directly in StoryMaps—great for simple locator maps. For complex multi-layer maps with analysis, create a Web Map in ArcGIS Online first, then embed it.
+                </div>
+              </div>
+
+              <div class="info-callout">
+                <span class="callout-icon">🎨</span>
+                <div>
+                  <strong>Express Maps Drawing Tools:</strong> You can add more than just points! Try:<br>
+                  • <strong>Numbered points</strong> (1, 2, 3...) for sequential tour stops<br>
+                  • <strong>Lines</strong> for routes and paths<br>
+                  • <strong>Freehand drawing</strong> for custom shapes<br>
+                  • <strong>Arrows</strong> to show direction or highlight areas<br>
+                  • <strong>Text annotations</strong> to label map features
+                </div>
+              </div>
+
+              <div class="activity-box">
+                <h4>📝 Stretch Goal:</h4>
+                <p>Add 2-3 more point markers to highlight different features of your location. Connect them with a line if they form a route or path!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task 6 -->
+          <div class="lab-task">
+            <div class="task-header">
+              <div class="task-number">Task 6</div>
+              <h2>Add More Content Blocks</h2>
+              <span class="task-time">5 minutes</span>
+            </div>
+            <div class="task-body">
+              <p>Flesh out your story with additional content. Try adding at least two more blocks:</p>
+
+              <div class="block-options">
+                <div class="block-option">
+                  <h4>📸 Add an Image</h4>
+                  <ol>
+                    <li>Click "+" → "Image"</li>
+                    <li>Upload a photo</li>
+                    <li>Add a caption describing it</li>
+                    <li>Add alt text for accessibility</li>
+                  </ol>
+                </div>
+                <div class="block-option">
+                  <h4>💬 Add a Quote</h4>
+                  <ol>
+                    <li>Click "+" → "Text"</li>
+                    <li>Type your quote</li>
+                    <li>Highlight and select "Quote" format</li>
+                    <li>Add attribution below</li>
+                  </ol>
+                </div>
+                <div class="block-option">
+                  <h4>🔗 Add a Button</h4>
+                  <ol>
+                    <li>Click "+" → "Button"</li>
+                    <li>Add button text (e.g., "Visit Official Website")</li>
+                    <li>Paste the URL</li>
+                    <li>Choose button style</li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="activity-box">
+                <h4>📝 Suggested Structure:</h4>
+                <ol>
+                  <li>Cover (done)</li>
+                  <li>Introduction text (done)</li>
+                  <li>Map (done)</li>
+                  <li>Image with caption</li>
+                  <li>More descriptive text</li>
+                  <li>Another image or quote</li>
+                  <li>Closing text with call-to-action</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task 7 -->
+          <div class="lab-task">
+            <div class="task-header">
+              <div class="task-number">Task 7</div>
+              <h2>Apply a Theme</h2>
+              <span class="task-time">3 minutes</span>
+            </div>
+            <div class="task-body">
+              <p>Give your story a polished look by applying a theme:</p>
+
+              <ol class="numbered-steps">
+                <li>
+                  <strong>Click the "Design" tab</strong> in the sidebar (paintbrush icon)
+                </li>
+                <li>
+                  <strong>Browse themes:</strong>
+                  <ul class="sub-list">
+                    <li>Summit (dark, professional)</li>
+                    <li>Tidal (light, airy)</li>
+                    <li>Mesa (warm, earthy)</li>
+                    <li>Ridgeline (bold header line)</li>
+                    <li>And more...</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Click a theme</strong> to preview it
+                </li>
+                <li>
+                  <strong>Optionally customize:</strong>
+                  <ul class="sub-list">
+                    <li>Adjust accent colors</li>
+                    <li>Change font pairing</li>
+                    <li>Modify cover style</li>
+                  </ul>
+                </li>
+              </ol>
+
+              <div class="pro-tips">
+                <h4>💡 Theme Selection Tips:</h4>
+                <ul>
+                  <li>Dark themes work well with bright/colorful images</li>
+                  <li>Light themes are better for text-heavy stories</li>
+                  <li>Match theme mood to your content (nature = earth tones)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task 8 -->
+          <div class="lab-task">
+            <div class="task-header">
+              <div class="task-number">Task 8</div>
+              <h2>Preview and Publish</h2>
+              <span class="task-time">5 minutes</span>
+            </div>
+            <div class="task-body">
+              <p>Time to see your story as readers will experience it!</p>
+
+              <ol class="numbered-steps">
+                <li>
+                  <strong>Click "Preview"</strong> in the top-right corner
+                </li>
+                <li>
+                  <strong>Test your story:</strong>
+                  <ul class="sub-list">
+                    <li>Scroll through the entire story</li>
+                    <li>Click map markers and test interactivity</li>
+                    <li>Check text for typos</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Test mobile view:</strong>
+                  <ul class="sub-list">
+                    <li>Click the phone icon in the preview toolbar</li>
+                    <li>Make sure everything looks good on small screens</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Exit preview</strong> and make any needed fixes
+                </li>
+                <li>
+                  <strong>Click "Publish"</strong> when you're satisfied:
+                  <ul class="sub-list">
+                    <li>Choose "Everyone (public)" to share with the world</li>
+                    <li>Or "Only me" if you want to keep it private for now</li>
+                    <li>Click "Publish" to go live!</li>
+                  </ul>
+                </li>
+              </ol>
+
+              <div class="success-callout">
+                <span class="callout-icon">🎉</span>
+                <div>
+                  <strong>Congratulations!</strong> Your story is now published! Copy the link to share it with others.
+                </div>
+              </div>
+
+              <div class="info-callout" style="background: rgba(251, 191, 36, 0.1); border-color: rgba(251, 191, 36, 0.3);">
+                <span class="callout-icon">⚠️</span>
+                <div>
+                  <strong>Sharing Levels Must Match!</strong> If your story is Public, any maps you embed must also be Public. Otherwise, viewers won't be able to see the embedded content!
+                </div>
+              </div>
+
+              <div class="info-callout">
+                <span class="callout-icon">📝</span>
+                <div>
+                  <strong>Remember:</strong> You can always edit and republish your story. Changes go live immediately when you save. Use "Duplicate" before major changes to keep a backup!
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Lab Checklist -->
+      <section class="lab-checklist-section">
+        <div class="container">
+          <div class="checklist-card">
+            <h2>✅ Lab Completion Checklist</h2>
+            <p>Make sure your StoryMap includes:</p>
+            <div class="checklist-items">
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Cover with image, title, and subtitle</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Introduction paragraph</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Express Map with at least one marker</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>At least one additional image</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Applied a theme</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Tested in preview mode</span>
+              </label>
+              <label class="checklist-item">
+                <input type="checkbox">
+                <span>Published the story</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="next-steps">
+        <div class="container">
+          <div class="completion-card">
+            <div class="completion-icon">🏆</div>
+            <h2>Lab Complete!</h2>
+            <p>You've built and published your first StoryMap! You now have hands-on experience with the core features. Ready for a real challenge?</p>
+            <div class="next-buttons">
+              <a href="challenge.html" class="cta-button">Take the Final Challenge →</a>
+              <a href="platform-tour.html" class="secondary-button">← Back to Platform Tour</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <div class="logo">StoryMap<span class="highlight">Workshop</span></div>
+          <p>&copy; 2026 Geography Department. Built for Student Success.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Workshop</h4>
+          <a href="account-setup.html">Account Setup</a>
+          <a href="platform-tour.html">Platform Tour</a>
+          <a href="lab.html">Lab</a>
+          <a href="challenge.html">Challenge</a>
+        </div>
+        <div class="footer-nav">
+          <h4>Resources</h4>
+          <a href="https://storymaps.arcgis.com/" target="_blank">StoryMaps Home</a>
+          <a href="https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/resources" target="_blank">ESRI Resources</a>
+          <a href="https://www.arcgis.com/home/signin.html" target="_blank">ArcGIS Sign In</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
