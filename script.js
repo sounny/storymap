@@ -157,5 +157,133 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // Image Lightbox for Tutorial Screenshots
+  const tutorialImages = document.querySelectorAll('.tutorial-screenshot, .step-visual img');
+  
+  if (tutorialImages.length > 0) {
+    // Create lightbox elements
+    const lightbox = document.createElement('div');
+    lightbox.className = 'image-lightbox';
+    lightbox.innerHTML = `
+      <div class="lightbox-backdrop"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <img src="" alt="" class="lightbox-image">
+        <p class="lightbox-caption"></p>
+      </div>
+    `;
+    document.body.appendChild(lightbox);
+
+    const lightboxImage = lightbox.querySelector('.lightbox-image');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    const lightboxBackdrop = lightbox.querySelector('.lightbox-backdrop');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+    // Add click handlers to images
+    tutorialImages.forEach(img => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+        lightboxCaption.textContent = img.alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    // Close lightbox
+    const closeLightbox = () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    lightboxBackdrop.addEventListener('click', closeLightbox);
+    lightboxClose.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+
+    // Inject lightbox styles
+    const lightboxStyles = document.createElement('style');
+    lightboxStyles.textContent = `
+      .image-lightbox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      .image-lightbox.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .lightbox-backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(8px);
+      }
+      .lightbox-content {
+        position: relative;
+        max-width: 90vw;
+        max-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: scale(0.9);
+        transition: transform 0.3s ease;
+      }
+      .image-lightbox.active .lightbox-content {
+        transform: scale(1);
+      }
+      .lightbox-image {
+        max-width: 100%;
+        max-height: 80vh;
+        border-radius: 8px;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+      }
+      .lightbox-caption {
+        margin-top: 1rem;
+        color: #94a3b8;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      .lightbox-close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.2s ease;
+        line-height: 1;
+      }
+      .lightbox-close:hover {
+        opacity: 1;
+      }
+      .tutorial-screenshot:hover,
+      .step-visual img:hover {
+        opacity: 0.9;
+        transition: opacity 0.2s ease;
+      }
+    `;
+    document.head.appendChild(lightboxStyles);
+  }
 });
 

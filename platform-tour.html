@@ -515,7 +515,13 @@
               <h2>Customizing Your Story's Look</h2>
             </div>
             <div class="step-body">
-              <p>Access the Design panel to customize your story's visual appearance:</p>
+              <p>To open the Design panel, click the <strong>Design</strong> button in the top header menu. This panel will slide out from the right side of your screen.</p>
+              
+              <div class="step-visual" style="margin-bottom: 2rem;">
+                 <img src="assets/design-panel-location.png" alt="Design Panel Location and Options" class="tutorial-screenshot">
+              </div>
+
+              <p>Use this panel to customize your story's visual appearance:</p>
 
               <div class="design-features">
                 <div class="design-feature">
@@ -557,6 +563,10 @@
               <h2>Preview & Publish</h2>
             </div>
             <div class="step-body">
+              <div class="step-visual" style="margin-bottom: 2rem;">
+                <img src="assets/preview-publish-location.png" alt="Preview and Publish Buttons Location" class="tutorial-screenshot">
+              </div>
+
               <p>Before sharing your story with the world, always preview and test:</p>
 
               <div class="publish-workflow">
@@ -624,6 +634,53 @@
                   <div>
                     <strong>Duplicate Option:</strong> Before publishing, consider using "Duplicate" to create a backup copy. This is also useful for creating variations of your story for different audiences.
                   </div>
+                </div>
+
+                <!-- DevTools Section -->
+                <div style="margin-top: 2.5rem; background: linear-gradient(135deg, rgba(56, 189, 248, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 16px; overflow: hidden;">
+                    <!-- Header -->
+                    <div style="background: linear-gradient(90deg, rgba(56, 189, 248, 0.15), rgba(168, 85, 247, 0.15)); padding: 1rem 1.5rem; border-bottom: 1px solid rgba(56, 189, 248, 0.2);">
+                        <h4 style="display: flex; align-items: center; gap: 0.75rem; margin: 0; font-size: 1.1rem;">
+                            <span style="font-size: 1.5rem;">📱</span> 
+                            <span>Advanced Tip: <span class="gradient-text">Chrome Mobile Emulator</span></span>
+                        </h4>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div style="padding: 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
+                        <!-- Left: Screenshot -->
+                        <div>
+                            <p style="font-size: 0.95rem; margin-bottom: 1rem; color: var(--text-secondary);">For a more accurate mobile preview, use Chrome's built-in developer tools to simulate specific devices:</p>
+                            <div class="step-visual" style="margin: 0;">
+                                <img src="assets/chrome-devtools-preview.png" alt="Chrome Developer Tools Mobile Preview" class="tutorial-screenshot" style="border-radius: 8px; border: 1px solid var(--border-color);">
+                            </div>
+                        </div>
+                        
+                        <!-- Right: Steps -->
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <div style="min-width: 32px; height: 32px; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem;">1</div>
+                                <div>
+                                    <strong style="color: var(--text-primary);">Open DevTools</strong>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0.25rem 0 0;">Right-click anywhere on the page and select <strong>Inspect</strong>, or press <kbd>F12</kbd>.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <div style="min-width: 32px; height: 32px; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem;">2</div>
+                                <div>
+                                    <strong style="color: var(--text-primary);">Toggle Device Mode</strong>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0.25rem 0 0;">Click the <strong>Device Toggle</strong> icon (📱) in the top-left of DevTools, or press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd>.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <div style="min-width: 32px; height: 32px; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem;">3</div>
+                                <div>
+                                    <strong style="color: var(--text-primary);">Select a Device</strong>
+                                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0.25rem 0 0;">Choose from the dropdown (e.g., iPhone 14, Pixel 7) to preview your story on that screen size.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>
