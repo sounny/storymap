@@ -31,7 +31,7 @@
 
     <main>
       <!-- Page Hero -->
-      <section class="page-hero">
+      <section class="page-hero setup-hero">
         <div class="container">
           <div class="breadcrumb">
             <a href="index.html">Home</a> / <span>Account Setup</span>
@@ -89,7 +89,7 @@
                   </ul>
                   <span class="recommended-badge">Recommended for this workshop</span>
                 </div>
-                <div class="comparison-card">
+                <a href="#method-b" class="comparison-card" style="text-decoration: none; color: inherit; cursor: pointer; display: block; height: 100%;">
                   <h3>🏢 Organizational Account</h3>
                   <p class="card-desc">Provided by your institution</p>
                   <ul class="feature-checklist">
@@ -106,7 +106,7 @@
                       <strong>Important:</strong> You'll need your <strong>organization's URL prefix</strong> to sign in (e.g., yourschool.maps.arcgis.com)
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
 
               <div class="info-callout">
@@ -315,7 +315,7 @@
               </div>
 
               <!-- Organizational Account (Alternative) -->
-              <div class="method-block" style="border-top: 1px solid var(--border-color); padding-top: 2rem;">
+              <div id="method-b" class="method-block" style="border-top: 1px solid var(--border-color); padding-top: 2rem;">
                 <h3>Method B: Organizational Account (Advanced)</h3>
                 <p>If you belong to a university or organization with an ArcGIS subscription, you can sign in using your organization's URL prefix. This grants access to <strong>paid features and unlimited storage</strong>.</p>
                 
@@ -395,6 +395,13 @@
                   <div>
                     <h4>Planning Stories</h4>
                     <p>Learn strategies for outlining and structuring your narrative</p>
+                  </div>
+                </div>
+                <div class="dashboard-feature">
+                  <span class="feature-icon">📰</span>
+                  <div>
+                    <h4>The Blog</h4>
+                    <p>Stay updated with new features and storytelling tips</p>
                   </div>
                 </div>
               </div>
