@@ -548,8 +548,40 @@ header {
 .img-placeholder {
   margin-top: 20px;
   height: 150px;
-  background: linear-gradient(to bottom, #2a384e, #1e293b);
+  background-color: #0f172a;
+  background-image: 
+    /* Grid Pattern */
+    linear-gradient(rgba(56, 189, 248, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.1) 1px, transparent 1px),
+    /* Abstract Landmasses */
+    url("data:image/svg+xml,%3Csvg width='200' height='150' viewBox='0 0 200 150' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30,40 Q50,20 70,40 T110,60 T140,30 T170,50 L170,100 Q140,120 100,100 T40,110 Z' fill='rgba(56, 189, 248, 0.15)'/%3E%3Cpath d='M10,20 Q30,5 50,20 T80,10 L80,40 Q50,50 20,40 Z' fill='rgba(168, 85, 247, 0.15)'/%3E%3Cpath d='M140,90 Q160,80 180,100 T190,130 L150,140 Q130,120 120,100 Z' fill='rgba(34, 211, 238, 0.1)'/%3E%3Ccircle cx='60' cy='50' r='2' fill='%2338bdf8'/%3E%3Ccircle cx='100' cy='80' r='2' fill='%2338bdf8'/%3E%3Ccircle cx='150' cy='45' r='2' fill='%23a855f7'/%3E%3Ccircle cx='35' cy='95' r='2' fill='%23a855f7'/%3E%3C/svg%3E");
+  background-size: 40px 40px, 40px 40px, cover;
   border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.img-placeholder::before {
+  content: 'LAT: 48.5734 | LON: 7.7521';
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-family: monospace;
+  font-size: 0.5rem;
+  color: var(--accent-cyan);
+  opacity: 0.6;
+}
+
+.img-placeholder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent, rgba(15, 23, 42, 0.4));
+  pointer-events: none;
 }
 
 /* Feature/Intro Section */
