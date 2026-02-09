@@ -582,52 +582,69 @@
       </section>
 
       <!-- Completion -->
-      <section class="next-steps challenge-complete">
-        <div class="container">
-          <!-- Completion Message -->
-          <div class="completion-card final-card">
-            <div class="completion-icon">🎓</div>
-            <h2>Workshop Complete!</h2>
-            <p>Congratulations on completing the StoryMap Workshop! You now have the skills to create compelling, interactive spatial narratives. Keep exploring and telling stories that matter.</p>
-          </div>
+        <section id="continue-journey" class="feature-section dark-bg" style="background: linear-gradient(to bottom, #111827, #1f2937); padding: 5rem 0;">
+            <div class="container">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;">
+                    <h2 class="section-title" style="margin-bottom: 1rem;">Continue Your <span class="highlight">Journey</span></h2>
+                    <p class="intro-text" style="color: var(--text-secondary); font-size: 1.2rem;">Storytelling is a lifelong skill. Connect with the global community of map-makers and keep honing your craft.</p>
+                </div>
+                
+                <div class="continue-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    
+                    <!-- Resource Hub -->
+                    <a href="https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/resources" target="_blank" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 16px; padding: 2rem; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; align-items: start; height: 100%;">
+                        <div style="background: rgba(59, 130, 246, 0.2); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">📚</div>
+                        <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.5rem;">ESRI Resource Hub</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">The central library for tutorials, webinars, and lesson plans. Constantly updated with the latest features and best practices.</p>
+                        <span style="color: var(--accent-blue); font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">Explore Hub &rarr;</span>
+                    </a>
 
-          <!-- Don't Stop Learning Card -->
-          <div class="completion-card" style="margin-top: 2rem; background: rgba(30, 41, 59, 0.8); border: 1px solid rgba(148, 163, 184, 0.2); text-align: center;">
-            <div class="completion-icon" style="background: rgba(59, 130, 246, 0.2); margin: 0 auto 1.5rem auto;">📚</div>
-            <h2>Don't Stop Learning</h2>
-            <p>Continue to expand your skills with these official resources:</p>
-            
-            <div class="resource-links" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; align-items: center;">
-              
-              <a href="https://www.esri.com/en-us/arcgis/products/arcgis-storymaps/resources" target="_blank" style="padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 8px; text-decoration: none; color: white; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; transition: background 0.2s; width: 100%; max-width: 400px;">
-                <span style="font-size: 2rem; margin-bottom: 0.5rem;">🖼️</span>
-                <strong style="font-size: 1.1rem;">ESRI Resource Hub</strong>
-                <div style="font-size: 0.9rem; color: var(--text-secondary);">Tutorials, webinars, and lesson plans</div>
-              </a>
-              
-              <a href="https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4" target="_blank" style="padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 8px; text-decoration: none; color: white; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; transition: background 0.2s; width: 100%; max-width: 400px;">
-                <span style="font-size: 2rem; margin-bottom: 0.5rem;">🚀</span>
-                <strong style="font-size: 1.1rem;">Getting Started Guide</strong>
-                <div style="font-size: 0.9rem; color: var(--text-secondary);">The official handbook for new authors</div>
-              </a>
+                    <!-- Getting Started -->
+                    <a href="https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4" target="_blank" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 16px; padding: 2rem; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; align-items: start; height: 100%;">
+                        <div style="background: rgba(16, 185, 129, 0.2); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">🚀</div>
+                        <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.5rem;">Getting Started Guide</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">The official handbook for new authors. Keep this bookmarked as your go-to reference for builder mechanics.</p>
+                        <span style="color: var(--accent-green); font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">Read Guide &rarr;</span>
+                    </a>
 
-              <a href="https://community.esri.com/t5/arcgis-storymaps/ct-p/arcgis-storymaps" target="_blank" style="padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 8px; text-decoration: none; color: white; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; transition: background 0.2s; width: 100%; max-width: 400px;">
-                <span style="font-size: 2rem; margin-bottom: 0.5rem;">🤝</span>
-                <strong style="font-size: 1.1rem;">Community Forums</strong>
-                <div style="font-size: 0.9rem; color: var(--text-secondary);">Connect with other storytellers</div>
-              </a>
+                    <!-- Community Forums -->
+                    <a href="https://community.esri.com/t5/arcgis-storymaps/ct-p/arcgis-storymaps" target="_blank" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 16px; padding: 2rem; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; align-items: start; height: 100%;">
+                        <div style="background: rgba(168, 85, 247, 0.2); width: 50px; height: 50px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">🤝</div>
+                        <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.5rem;">Community Forums</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">Stuck? Join the conversation with thousands of other storytellers and ESRI experts in the community forums.</p>
+                        <span style="color: var(--accent-purple); font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;">Join Discussion &rarr;</span>
+                    </a>
 
-              <a href="https://storymaps.arcgis.com/collections/a3f5e00deebc491dafdaccecb00b45e3" target="_blank" style="padding: 1.5rem; background: rgba(255,255,255,0.05); border-radius: 8px; text-decoration: none; color: white; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; transition: background 0.2s; width: 100%; max-width: 400px;">
-                <span style="font-size: 2rem; margin-bottom: 0.5rem;">🌟</span>
-                <strong style="font-size: 1.1rem;">Great Examples Collection</strong>
-                <div style="font-size: 0.9rem; color: var(--text-secondary);">Inspiration for portfolio building and storytelling</div>
-              </a>
-
-
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- Advanced Studies ISU Selection -->
+        <section id="advanced-studies" class="feature-section" style="background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(168, 85, 247, 0.1)); border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <div class="advanced-studies-content">
+                    <div class="advanced-studies-badge">Advanced Education</div>
+                    <h2 class="section-title">Continue Your Learning with <span class="highlight">Advanced Studies at ISU</span></h2>
+                    <div class="advanced-studies-grid">
+                        <div class="advanced-studies-text">
+                            <p class="lead">Take your storymapping skills to the next level with our intensive coding-focused curriculum.</p>
+                            <p>This <strong>two-week intensive course</strong> goes deep into the coding aspect of storymapping, allowing participants to learn how to make interactive web dashboards that communicate about Climate change, biodiversity loss, and environmental degradation.</p>
+                            <p>Satellite imagery and Earth observation data offer unprecedented opportunities to monitor, analyze, and communicate these challenges – but only if we can make this data accessible and actionable. This course teaches you how to build interactive web-based dashboards that transform complex satellite data into clear, compelling visualizations.</p>
+                            <a href="https://www.isunet.edu/as26-web-development-for-sustainability/" target="_blank" class="cta-button">Register for AS26 Web Development &rarr;</a>
+                        </div>
+                        <div class="advanced-studies-outcomes">
+                            <h3>What You'll Achieve:</h3>
+                            <ul class="checklist">
+                                <li><strong>Frontend Mastery:</strong> Gain hands-on experience with modern web development frameworks.</li>
+                                <li><strong>Geospatial Dashboards:</strong> Learn to build and deploy functional monitoring applications.</li>
+                                <li><strong>Satellite Analytics:</strong> Process and visualize Earth observation data for real-world impact.</li>
+                                <li><strong>Portfolio Impact:</strong> Develop a tangible project demonstrating both technical skill and sustainability impact.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
